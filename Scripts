@@ -368,7 +368,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "LuckyBlock Battlegrounds",
+	Name = "LuckyBlock Battle...",
 	Icon = "rbxassetid://7733799795",
 	PremiumOnly = false
 })
