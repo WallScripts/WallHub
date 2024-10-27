@@ -111,7 +111,7 @@ local Section = Tab:AddSection({
 
 Tab:AddButton({
 	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/NyV3H59q"))(); Notification("Noclip Tool")
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/DEBmKDhK"))(); Notification("Noclip Tool")
       		print("botão pressionado")
   	end    
 })
