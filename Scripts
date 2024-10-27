@@ -368,6 +368,39 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
+	Name = "LuckyBlock Battlegrounds",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Lucky Blocks"
+})
+local blocks = {"SpawnLuckyBlock", "SpawnDiamondBlock", "SpawnSuperBlock", "SpawnRainbowBlock", "SpawnGalaxyBlock"}
+local connections = {}
+
+for _, block in ipairs(blocks) do
+    Tab:AddToggle({
+        Name = "Spawn " .. block:sub(6),  -- Exibe o nome do bloco sem "Spawn"
+        Default = false,
+        Callback = function(Value)
+            if Value then
+                print("Spawn " .. block .. " ativado")
+                connections[block] = game:GetService("RunService").Heartbeat:Connect(function() 
+                    game.ReplicatedStorage[block]:FireServer() 
+                end)
+            else
+                print("Spawn " .. block .. " desativado")
+                if connections[block] then
+                    connections[block]:Disconnect()
+                    connections[block] = nil
+                end
+            end
+        end
+    })
+end
+
+local Tab = Window:MakeTab({
 	Name = "Zombie Attack",
 	Icon = "rbxassetid://7733799795",
 	PremiumOnly = false
