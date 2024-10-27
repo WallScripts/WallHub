@@ -1,0 +1,1197 @@
+ local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Giangplay/Script/main/Orion_Library_PE_V2.lua")))()
+local Window = OrionLib:MakeWindow({IntroText = "Wall Hub", IntroIcon = "rbxassetid://8834748103",Name = ("Wall Hub 1.3 | Scripts Aleatórios".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, InEnabled = true, ConfigFolder = "Wall Hub"})
+
+--Notificação
+local function Notification(ScriptName)
+    OrionLib:MakeNotification({
+    Name = "Wall Hub System",
+    Content = "O Script ".. ScriptName .. " foi executado",
+    Image = "rbxassetid://7733911828",
+    Time = 5
+    })
+end
+
+-- NotificaçãoOn
+local function NotificationOn(ScriptName)
+    OrionLib:MakeNotification({
+        Name = "Wall Hub System",
+        Content = " ".. ScriptName .. " Ativado",
+        Image = "rbxassetid://7733911828",
+        Time = 5
+    })
+end
+
+-- NotificaçãoOff
+local function NotificationOff(ScriptName)
+    OrionLib:MakeNotification({
+        Name = "Wall Hub System",
+        Content = " ".. ScriptName .. " Desativado",
+        Image = "rbxassetid://7733911828",
+        Time = 5
+    })
+end
+
+local Tab = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://7733960981",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "FlyGui (minha versão)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/qUapcumD"))(); Notification("Fly GUI")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Jump and Speed Modifier"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/PUdkcyUP"))(); Notification("Jump And Speed Modifier")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Espectar"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/daM0ut53"))(); Notification("Espectar")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Esp Simples"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))(); Notification("Esp Simples")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Safe Spot"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/k6wxsefJ"))(); Notification("Safe Spot")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Teleport Tool"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/iek04s0j"))(); Notification("Tp Tool")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Noclip Tool"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/NyV3H59q"))(); Notification("Noclip Tool")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Invisible Tool"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/mJj40Mzn"))(); Notification("Invisible Tool")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Drop Tools(Dropa todos os itens do seu inventário)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()
+      		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+   if v:IsA("Tool")  then
+    wait(0.1)
+    v.Parent = game.Players.LocalPlayer.Character
+    wait(0.1)
+    v.Parent = game.Workspace
+Notification("Drop Tools")
+end
+end
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Shift Lock"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/TZ7H0Jdx"))(); Notification("Shift Lock")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Infinite Yield"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))(); Notification("Infinite Yield")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Console"
+})
+
+Tab:AddButton({
+	Name = "Executar(Vai aparecer um botão no canto superior esquerdo)",
+	Callback = function()
+      		local Console = Instance.new("ScreenGui")
+Console.Name = 'Console'
+Console.Parent = game.CoreGui
+
+local button = Instance.new("TextButton")
+button.Size = UDim2.new(0, 32, 0, 32)
+button.Position = UDim2.new(0, 105, 0, -32)
+button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button.BackgroundTransparency = 0.5
+button.Text = "< >"
+button.TextColor3 = Color3.fromRGB(200, 200, 200)
+button.Parent = Console
+button.Font = 'Code'
+button.TextSize = 12
+
+local buttonCorner = Instance.new("UICorner")
+buttonCorner.CornerRadius = UDim.new(0, 8)
+buttonCorner.Parent = button
+
+button.MouseButton1Click:Connect(function()
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, "F9" , false , game)
+end)
+Notification("Console")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Armazenar Texto(Vai armazenar mensagens no console)"
+})
+
+ Tab:AddTextbox({
+    Name = "Armazenar",
+    Default = "Digite algo...",
+    TextDisappear = false,
+    Callback = function(value)
+        print("Você digitou: " .. value)
+    end
+})
+
+Tab:AddTextbox({
+    Name = "Armazenar",
+    Default = "Digite algo...",
+    TextDisappear = false,
+    Callback = function(value)
+        print("Você digitou: " .. value)
+    end
+})
+
+Tab:AddTextbox({
+    Name = "Armazenar",
+    Default = "Digite algo...",
+    TextDisappear = false,
+    Callback = function(value)
+        print("Você digitou: " .. value)
+    end
+})
+
+local Tab = Window:MakeTab({
+	Name = "Player",
+	Icon = "rbxassetid://7733771472",
+	PremiumOnly = false
+})
+
+Tab:AddSlider({
+    Name = "WalkSpeed",
+    Min = 0,
+    Max = 400,
+    Default = 16,
+    Color = Color3.fromRGB(0, 255, 0),
+    Increment = 1,
+    ValueName = "",
+    Callback = function(value)
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:WaitForChild("Humanoid")
+        humanoid.WalkSpeed = value        
+    end    
+})
+
+Tab:AddSlider({
+    Name = "JumpPower",
+    Min = 0,
+    Max = 400,
+    Default = 50,
+    Color = Color3.fromRGB(255, 0, 0),
+    Increment = 1,
+    ValueName = "",
+    Callback = function(value)
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:WaitForChild("Humanoid")
+        humanoid.JumpPower = value        
+    end    
+}) 
+
+Tab:AddSlider({
+    Name = "Gravidade",
+    Min = 0,
+    Max = 1000,
+    Default = 196.2,
+    Color = Color3.fromRGB(0, 0, 255),
+    Increment = 1,
+    ValueName = "",
+    Callback = function(value)
+        game.Workspace.Gravity = value
+    end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Doors👁",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Doors(mspaint V3)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))(); Notification("Doors(mspaint V3)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Muscle Legends💪",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Muscle Legends💪(Speed Hub X)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))(); Notification("Muscle Legends💪(Speed Hub X)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Muscle Legends💪(Auto Glitch Pets)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/Roblox-Script/main/Muscle%20Legend"))(); Notification("Muscle Legends💪(Auto Glitch Pets)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "⚡️Ninja Legends",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "⚡️Ninja Legends (horizon.cc)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadetamic/horizon/main/loadstring.lua"))(); Notification("⚡️Ninja Legends (horizon.cc)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "⚡️Ninja Legends (Proxima Hub)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua", true))(); Notification("⚡️Ninja Legends (Proxima Hub)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Zombie Attack",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Zombie Attack(Ghost Hub)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet('https://ghost-storage.7m.pl/scripts/ghosthublauncher.lua'))(); Notification("Zombie Attack(Ghost Hub)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Legends of Speed⚡️",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Legends of Speed⚡️(Auto Glitch Pets)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WhackyCode/SPEEDDEVIL/main/legendsofspeed.lua"))(); Notification("Legends of Speed⚡️(Auto Glitch Pets)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Slap Battles👋",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Slap Battles👋(Giang Hub)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua",true))(); Notification("Slap Battles👋(Giang Hub)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Kickar"
+})
+
+Tab:AddButton({
+	Name = "Swapper Kick (Funcionando)",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AquoupiRblx/SlapBattles/refs/heads/main/KickUISwapper.lua"))(); Notification("Swapper Kick (Funcionando)")
+      		print("botão pressionado")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Recall Kick(Funcionando)",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AquoupiRblx/SlapBattles/refs/heads/main/KickUIRecall.lua"))(); Notification("Recall Kick(Funcionando)")
+      		print("botão pressionado")
+  	end    
+})
+
+
+
+local Tab = Window:MakeTab({
+	Name = "Brookhaven 🏡RP",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Brookhaven 🏡RP(REDzHUB)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))(); Notification("Brookhaven 🏡RP(REDzHUB)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Brookhaven 🏡RP(Sander X)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/sanderxnewu/refs/heads/main/Updater'))(); Notification("Brookhaven 🏡RP(Sander X)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Funky Friday🎤",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Funky Friday AutoPlay(Null Fire)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Fire-Hub/main/Loader"))(); Notification("Funky Friday AutoPlay(Null Fire)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Funky Friday (Simple Autoplay)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/RandomScript/main/FunkyFridayMobile"))(); Notification("Funky Friday (Simple Autoplay)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "UGC (Auto Farm)",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "UGC Don't Move"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback =  function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Imalwibest/Imalwibest/main/Don't%20move%20for%20UGC.lua"))(); Notification("UGC Don't Move")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Infinite Money",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Aqui ficam literalmente","todos os scripts de Infinite Money(que eu botar)")
+local Section = Tab:AddSection({
+	Name = "Like or Pass(Infinite Money)"
+})
+Tab:AddButton({
+	Name = "Executar",
+	Callback =  function()
+         for i = 1, 99999 do game:GetService("ReplicatedStorage").RewardEvents.GiveReward:FireServer("5") end
+         Notification("Like or Pass (Infinite Money)")
+      		print("botão pressionado")
+  	end    
+})
+
+Tab:AddToggle({
+    Name = "Explode all(loop)(Bônus)",
+    Default = false,
+    Callback = function(Value)
+        running = Value
+        if running then
+            print("Toggle ativada"); NotificationOn("Explode all(loop)")            
+            loop = game:GetService("RunService").Heartbeat:Connect(function()
+                local b = {
+                    [1] = {
+                        ["ItemName"] = "ExplodePlayer",
+                        ["Key"] = "x5",
+                        ["Cash"] = -0
+                    }
+                }
+                game:GetService("ReplicatedStorage").Events.PurchaseTroll:InvokeServer(unpack(b))
+
+                local p = game:GetService("Players"):GetPlayers()
+                local fp = {}
+                local lp = game.Players.LocalPlayer
+
+                for _, v in ipairs(p) do
+                    if v ~= lp then
+                        table.insert(fp, v)
+                    end
+                end
+
+                if #fp > 0 then
+                    local rp = fp[math.random(1, #fp)]
+                    game:GetService("ReplicatedStorage").Events.TrollPlayer:FireServer(rp.Name)
+                end
+            end)
+        else
+            print("Toggle desativada"); NotificationOff("Clown all(loop)")            
+            if loop then
+                loop:Disconnect()
+            end
+        end
+    end
+})
+
+Tab:AddToggle({
+    Name = "Clown all(loop)(Bônus)",
+    Default = false,
+    Callback = function(Value)
+        running = Value
+        if running then
+            print("Toggle ativada"); NotificationOn("Clown all(loop)")            
+            loop = game:GetService("RunService").Heartbeat:Connect(function()
+                local b = {
+                    [1] = {
+                        ["ItemName"] = "ClownPlayer",
+                        ["Key"] = "x5",
+                        ["Cash"] = -0
+                    }
+                }
+                game:GetService("ReplicatedStorage").Events.PurchaseTroll:InvokeServer(unpack(b))
+
+                local p = game:GetService("Players"):GetPlayers()
+                local fp = {}
+                local lp = game.Players.LocalPlayer
+
+                for _, v in ipairs(p) do
+                    if v ~= lp then
+                        table.insert(fp, v)
+                    end
+                end
+
+                if #fp > 0 then
+                    local rp = fp[math.random(1, #fp)]
+                    game:GetService("ReplicatedStorage").Events.TrollPlayer:FireServer(rp.Name)
+                end
+            end)
+        else
+            print("Toggle desativada"); NotificationOff("Clown all(loop)")            
+            if loop then
+                loop:Disconnect()
+            end
+        end
+    end
+})
+
+local Section = Tab:AddSection({
+	Name = "Rags to Richers(Infinite Money)"
+})
+Tab:AddButton({
+	Name = "Executar",
+	Callback =  function()loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/RagstoRiches"))(); Notification("Rags to Richers (Infinite Money)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Impossible Squid Game! Glass Bridge 2(Infinite Money+Show Path)"
+})
+Tab:AddButton({
+	Name = "Executar",
+	Callback =  function()loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/refs/heads/main/GlassBridge"))(); Notification("Impossible Squid Game! Glass Bridge 2(Infinite Money+Show Path)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Destruction Simulator(Infinite Money)"
+})
+Tab:AddButton({
+	Name = "Executar",
+	Callback =  function()loadstring(game:HttpGet("https://waza-scripts.vercel.app/script/DestructionSimulator"))(); Notification("Destruction Simulator(Infinite Money)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Esp+Aimbot",
+	Icon = "rbxassetid://7733774602",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Esp Universal(Lightux)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02six/UNIVERSALESPLTX/main/README.md'),true))(); Notification("Esp Universal(Lightux)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Aimbot Universal(Neutron.lua)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Neutron.lua/main/MainNeutron.lua"))(); Notification("Aim Bot Universal(Neutron.lua)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Trollar/Diversão",
+	Icon = "rbxassetid://7734059095",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Escalar nas paredes"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_E872F3ky4888TSVdj6Adgi1hSLtM038AyxVpTVw07QA3QUDcI3sxmuD869hYR4id.lua.txt"))(); Notification("Escalar nas paredes")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Andar nas paredes"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))(); Notification("Andar nas paredes")
+      		print("botão pressionado")
+  	end    
+})
+
+-- Variáveis para armazenar números e resultado
+local num1 = 0
+local num2 = 0
+local resultado = 0
+local resultadoLabel
+
+-- Função para atualizar o resultado na interface
+local function atualizarResultado()
+    resultadoLabel:Set("Resultado: " .. tostring(resultado))
+end
+
+-- Função para somar
+local function somar()
+    resultado = num1 + num2
+    print("Resultado da soma: " .. resultado)
+    atualizarResultado()
+end
+
+-- Função para subtrair
+local function subtrair()
+    resultado = num1 - num2
+    print("Resultado da subtração: " .. resultado)
+    atualizarResultado()
+end
+
+-- Função para multiplicar
+local function multiplicar()
+    resultado = num1 * num2
+    print("Resultado da multiplicação: " .. resultado)
+    atualizarResultado()
+end
+
+-- Função para dividir
+local function dividir()
+    if num2 ~= 0 then
+        resultado = num1 / num2
+        print("Resultado da divisão: " .. resultado)
+    else
+        resultado = "Erro: Divisão por zero"
+        print(resultado)
+    end
+    atualizarResultado()
+end
+
+-- Função para atualizar os números
+local function atualizarNum1(value)
+    num1 = tonumber(value) or 0
+    print("Número 1 atualizado: " .. num1)
+end
+
+local function atualizarNum2(value)
+    num2 = tonumber(value) or 0
+    print("Número 2 atualizado: " .. num2)
+end
+
+-- Cria a aba da calculadora
+local calcTab = Window:MakeTab({
+    Name = "Calculadora",
+    Icon = "rbxassetid://7733919105",
+    PremiumOnly = false
+})
+
+-- Input para o primeiro número
+calcTab:AddTextbox({
+    Name = "Número 1",
+    Default = "0",
+    TextDisappear = false, -- Não desaparece após a entrada
+    Callback = function(value)
+        atualizarNum1(value)
+    end
+})
+
+-- Input para o segundo número
+calcTab:AddTextbox({
+    Name = "Número 2",
+    Default = "0",
+    TextDisappear = false, -- Não desaparece após a entrada
+    Callback = function(value)
+        atualizarNum2(value)
+    end
+})
+
+-- Botões de operação
+calcTab:AddButton({
+    Name = "Somar",
+    Callback = function()
+        somar()
+    end
+})
+
+calcTab:AddButton({
+    Name = "Subtrair",
+    Callback = function()
+        subtrair()
+    end
+})
+
+calcTab:AddButton({
+    Name = "Multiplicar",
+    Callback = function()
+        multiplicar()
+    end
+})
+
+calcTab:AddButton({
+    Name = "Dividir",
+    Callback = function()
+        dividir()
+    end
+})
+
+-- Label para exibir o resultado
+resultadoLabel = calcTab:AddLabel("Resultado: 0")
+
+local Tab = Window:MakeTab({
+	Name = "Gráficos🖥",
+	Icon = "rbxassetid://7743874674",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Realmente fica muito massa","mas se o mapa for muito grande, pode travar")
+
+local Section = Tab:AddSection({
+	Name = "RTX ON(Pshade Reborn)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))(); Notification("RTX ON")
+      		print("botão pressionado")
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Executores",
+	Icon = "rbxassetid://7733920644",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Por algum motivo não gosta do seu executor?","é só executar algum remake do seu executor favorito e pronto")
+
+local Section = Tab:AddSection({
+	Name = "Synapse X"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))(); Notification("Synapse X")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Server🌐",
+	Icon = "rbxassetid://7733954760",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Server Browser🌐"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))(); Notification("Server Browser")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Server Hop/Rejoin"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/CH0LhrEe"))(); Notification("Server Hob/Rejoin")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Anti Afk/Idle(Eu acho q tá funcionando kkljklk)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/hiPqmXfR"))(); Notification("Anti AFK/Idle")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Atualizações 🎉",
+	Icon = "rbxassetid://7743878358",
+	PremiumOnly = false
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Atualizações"
+})
+
+Tab:AddParagraph("v1.1","AGORA DÁ PRA MOVER O GUI")
+Tab:AddParagraph("v1.2","3 novos scripts: esp, espectar, speed and  jump modifier e safe spot")
+Tab:AddParagraph("v1.3","AGORA TEM UMA MINI INTRO")
+
+--Funções Copiar (slc pai tá muito especialista)
+
+local function copyToClipboard(text)
+    setclipboard(text)
+    OrionLib:MakeNotification({
+        Name = "Copiado",
+        Content = text .. " foi copiado para a área de transferência.",
+        Image = "rbxassetid://7733911828",
+        Time = 5
+    })
+end
+
+--Funções2
+
+local function copyToClipboard2(text)
+    setclipboard(text)
+    OrionLib:MakeNotification({
+        Name = "Discord",
+        Content = text .. " foi copiado para a área de transferência.",
+        Image = "rbxassetid://7733911828",
+        Time = 5
+    })
+end
+
+--Funções3
+
+local function copyToClipboard3(text)
+    setclipboard(text)
+    OrionLib:MakeNotification({
+        Name = "YouTube",
+        Content = text .. " foi copiado para a área de transferência.",
+        Image = "rbxassetid://7733911828",
+        Time = 5
+    })
+end
+
+local Tab = Window:MakeTab({
+	Name = "Créditosℹ️",
+	Icon = "rbxassetid://7733964719",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Hub feito por  ","Wall")
+
+local Section = Tab:AddSection({
+	Name = "Muscle Legends💪"
+})
+
+Tab:AddParagraph("Speed Hub X | Version: 3.6.5 "," AhmadV99 (discord: https://discord.gg/G3b3HqJUvB)")
+Tab:AddButton({
+	Name = "Copiar Discord",
+	Callback = function()copyToClipboard2("https://discord.gg/G3b3HqJUvB")    
+      		print("botão pressionado")
+  	end    
+})
+
+Tab:AddParagraph("Auto Glitch Pets(Não tem nome)","WTSAT(youtube: https://youtube.com/@wtsat5815?si=evI0-89eu8jXdZ68)")
+
+local Section = Tab:AddSection({
+	Name = "Ninja Legends"
+})
+
+Tab:AddParagraph("horizon.cc | V-5 "," Shadetamic (discord: https://discord.gg/hmApmtj2td")
+Tab:AddButton({
+	Name = "Copiar Discord",
+	Callback = function()copyToClipboard2("https://discord.gg/hmApmtj2td")    
+      		print("botão pressionado")
+  	end
+})
+
+Tab:AddParagraph("Proxima Hub | ⚡️Ninja Legends ","Trix(Link discord não funciona)")
+
+local Section = Tab:AddSection({
+	Name = "Legends of Speed"
+})
+
+Tab:AddParagraph("Auto Glitch Pets (Não tem nome)","Roblox Scripts(canal q eu achei o script)(youtube: https://youtube.com/@robloxscripts-wo1qu?si=pTK6BZMgm7-_0QoA)")
+Tab:AddButton({
+	Name = "Copiar YouTube",
+	Callback = function()copyToClipboard3("https://discord.gg/G3b3HqJUvB")    
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Zombie Attack"
+})
+
+Tab:AddParagraph("Ghost Hub","Não sabemos(discord: https://discord.com/invite/JKzWeeCDas)")
+Tab:AddButton({
+	Name = "Copiar Discord",
+	Callback = function()copyToClipboard2("https://discord.com/invite/JKzWeeCDas")    
+      		print("botão pressionado")
+  	end
+})
+
+local Section = Tab:AddSection({
+	Name = "Slap Battles"
+})
+Tab:AddParagraph("Slap Battles  ","Giang Hub(Link discord não funciona)")
+Tab:AddParagraph("Swapper Kick e Recall kick"," aquaiopi (youtube: https://youtube.com/@aquoupi?si=4XG14h8erQMtfHJL)")
+
+local Section = Tab:AddSection({
+	Name = "Brookhaven"
+})
+
+Tab:AddParagraph("REDz HUB 3.5: Brookhaven 🏡RP  ","redz9999(discord: https://discord.gg/7aR7kNVt4g)")
+Tab:AddButton({
+	Name = "Copiar Discord",
+	Callback = function()copyToClipboard2("https://discord.gg/7aR7kNVt4g")    
+      		print("botão pressionado")
+  	end
+})
+
+
+Tab:AddParagraph("Sander X | Brookhaven 🏡RP   ","Sander X(discord: https://discord.gg/GkPTrjxZtG")
+Tab:AddButton({
+	Name = "Copiar Discord",
+	Callback = function()copyToClipboard2("https://discord.gg/GkPTrjxZtG")    
+      		print("botão pressionado")
+  	end
+})
+
+local Section = Tab:AddSection({
+	Name = "Doors👁"
+})
+
+Tab:AddParagraph("ms paint v3","não cabe aqui kkjlk(discord: https://discord.com/invite/cfyMptntHr)")
+Tab:AddButton({
+	Name = "Copiar Discord",
+	Callback = function()copyToClipboard2("https://discord.com/invite/cfyMptntHr")    
+      		print("botão pressionado")
+  	end
+})
+
+local Section = Tab:AddSection({
+	Name = "Funky Friday"
+})
+
+Tab:AddParagraph("Nullfire: Funky Friday ","xinfernusx e rob_dcg_yt (discord)")
+Tab:AddParagraph("Funky Friday (Simple AutoPlay","Nadir & Wally (Os mano não botou nenhum link)")
+
+local Section = Tab:AddSection({
+	Name = "Infinite Money"
+})
+Tab:AddParagraph("Like or Pass","Roblox lee bica(discord: https://discord.com/invite/GPE7hpkNEt)")
+Tab:AddButton({
+	Name = "Copiar YouTube",
+	Callback = function()copyToClipboard3("https://youtube.com/@robloxleebika.discord.youtube?si=M6o-45qKKx1EokK0")    
+      		print("botão pressionado")
+  	end
+})
+
+Tab:AddParagraph("Rags to Richers ","Tora Scripts(Youtube: https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")
+Tab:AddParagraph("Impossible Squid Game! Inpossible Glass Bridge 2","Tora Scripts(Youtube: https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")
+Tab:AddButton({
+	Name = "Copiar YouTube",
+	Callback = function()copyToClipboard3("https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")    
+      		print("botão pressionado")
+  	end    
+})
+
+Tab:AddParagraph("Destruction Simulator","ZhenX (Youtube: https://youtube.com/@zhenxscripts?si=oWLfdSWIrUcJm62M")
+Tab:AddButton({
+	Name = "Copiar YouTube",
+	Callback = function()copyToClipboard3("https://youtube.com/@zhenxscripts?si=oWLfdSWIrUcJm62M")    
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "UGC(Auto Farm)"
+})
+
+Tab:AddParagraph("Alwi Hub | Don't Move FOR UGC! V.12","Alwi (discord: https://discord.gg/pU8tNc9WpJ)")
+Tab:AddButton({
+	Name = "Copiar Discord",
+	Callback = function()copyToClipboard2("https://discord.gg/pU8tNc9WpJ")    
+      		print("botão pressionado")
+  	end
+})
+
+local Section = Tab:AddSection({
+	Name = "Gráficos"
+})
+Tab:AddParagraph("RTX ON | Pshade Reborn V1.0.7","Patrick(YouTube: https://youtube.com/@im_patrick?si=DRgJ9H1HONJiKerM)")
+Tab:AddButton({
+	Name = "Copiar YouTube",
+	Callback = function()copyToClipboard3("https://youtube.com/@im_patrick?si=DRgJ9H1HONJiKerM")    
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Esp Universal"
+})
+
+Tab:AddParagraph("Lightux","(discord: https://discord.gg/scripts)")
+Tab:AddButton({
+	Name = "Copiar Discord",
+	Callback = function()copyToClipboard2("https://discord.gg/scripts")    
+      		print("botão pressionado")
+  	end
+})
+
+local Section = Tab:AddSection({
+	Name = "Aimbot Universal"
+})
+
+Tab:AddParagraph("Neutron.lua","By PawThePaw(Não achei nenhum link)")
+
+local Section = Tab:AddSection({
+	Name = "Calculadora"
+})
+
+Tab:AddParagraph("script foi feito pelo "," Chat GPT")
+
+local Section = Tab:AddSection({
+	Name = "Apagar"
+})
+
+Tab:AddButton({
+	Name = "Apagar GUI",
+	Callback = function()OrionLib:Destroy()
+      		print("botão pressionado")
+  	end    
+})
+
+local player = game.Players.LocalPlayer
+local playerName = player.Name
+
+OrionLib:MakeNotification({
+    Name = "Bem-vindo ao Wall Hub",
+    Content = "Eai, " .. playerName .. "!",
+    Image = "rbxassetid://7733911828",
+    Time = 5
+})
+
+print("Nome do jogador: " .. playerName)
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerName = player.Name
+local playerUserId = player.UserId
+
+local function copyToClipboard(text)
+    setclipboard(text)
+    OrionLib:MakeNotification({
+        Name = "Copiado",
+        Content = text .. " foi copiado para a área de transferência.",
+        Image = "rbxassetid://7733911828",
+        Time = 5
+    })
+end
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerName = player.Name
+local playerUserId = player.UserId
+local gameId = game.PlaceId
+local gameName = game:GetService("MarketplaceService"):GetProductInfo(gameId).Name
+
+local infoTab = Window:MakeTab({
+    Name = "Informações Extra",
+    Icon = "rbxassetid://7733911828",
+    PremiumOnly = false
+})
+
+infoTab:AddLabel("Nome do Player: " .. playerName)
+infoTab:AddLabel("ID do Player: " .. playerUserId)
+
+infoTab:AddLabel("Nome do Game: " .. gameName)
+infoTab:AddLabel("ID do Game: " .. gameId)
+
+infoTab:AddButton({
+    Name = "Copiar Nome do Player",
+    Callback = function()
+        copyToClipboard(playerName)
+    end
+})
+
+infoTab:AddButton({
+    Name = "Copiar ID do Player",
+    Callback = function()
+        copyToClipboard(tostring(playerUserId))
+    end
+})
+
+infoTab:AddButton({
+    Name = "Copiar Nome do Game",
+    Callback = function()
+        copyToClipboard(gameName)
+    end
+})
+
+infoTab:AddButton({
+    Name = "Copiar ID do Game",
+    Callback = function()
+        copyToClipboard(tostring(gameId))
+    end
+})
+
+OrionLib:Init()
