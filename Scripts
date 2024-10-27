@@ -1112,12 +1112,19 @@ local Section = Tab:AddSection({
 Tab:AddParagraph("script foi feito pelo "," Chat GPT")
 
 local Section = Tab:AddSection({
-	Name = "Apagar"
+	Name = "Wall Hub"
 })
 
 Tab:AddButton({
-	Name = "Apagar GUI",
+	Name = "Apagar Wall Hub",
 	Callback = function()OrionLib:Destroy()
+      		print("botão pressionado")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Resetar Wall Hub(se bugar)",
+	Callback = function()OrionLib:Destroy(); loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/Scripts"))()
       		print("botão pressionado")
   	end    
 })
