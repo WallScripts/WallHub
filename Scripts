@@ -1118,14 +1118,14 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Apagar Wall Hub",
 	Callback = function()OrionLib:Destroy()
-      		print("botão pressionado")
+      		print("Wall Hub apagado")
   	end    
 })
 
 Tab:AddButton({
-	Name = "Resetar Wall Hub(se bugar)",
+	Name = "Resetar Wall Hub",
 	Callback = function()OrionLib:Destroy(); loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/Scripts"))()
-      		print("botão pressionado")
+      		print("Wall Hub resetado")
   	end    
 })
 
@@ -1134,7 +1134,7 @@ local playerName = player.Name
 
 OrionLib:MakeNotification({
     Name = "Bem-vindo ao Wall Hub",
-    Content = "Eai, " .. playerName .. "!",
+    Content = "Olá, " .. playerName .. "!",
     Image = "rbxassetid://7733911828",
     Time = 5
 })
