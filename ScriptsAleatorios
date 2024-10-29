@@ -679,7 +679,7 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
-	Name = "Impossible Squid Game! Glass Bridge 2(Infinite Money+Show Path)"
+	Name = "Impossible Squid Game! Glass Bridge 2(Infinite Money/Show Path)"
 })
 Tab:AddButton({
 	Name = "Executar",
@@ -694,6 +694,15 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Executar",
 	Callback =  function()loadstring(game:HttpGet("https://waza-scripts.vercel.app/script/DestructionSimulator"))(); Notification("Destruction Simulator(Infinite Money)")
+      		print("botão pressionado")
+  	end    
+})
+local Section = Tab:AddSection({
+	Name = "Hide or Die(Infinite Money/Crates/Esp)"
+})
+Tab:AddButton({
+	Name = "Executar",
+	Callback =  function()loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/HideorDie"))(); Notification("Hide or Die(Infinite Money/Crates/Esp)")
       		print("botão pressionado")
   	end    
 })
@@ -1117,6 +1126,7 @@ Tab:AddButton({
 Tab:AddParagraph("Rags to Richers ","Tora Scripts(Youtube: https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")
 Tab:AddParagraph("Impossible Squid Game! Inpossible Glass Bridge 2","Tora Scripts(Youtube: https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")
 Tab:AddParagraph("The Haunt","Tora Scripts(Youtube: https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")
+Tab:AddParagraph("Hide or Die(Infinite Money/Crates/Esp)","Tora Scripts(Youtube: https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")
 Tab:AddButton({
 	Name = "Copiar YouTube",
 	Callback = function()copyToClipboard3("https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")    
