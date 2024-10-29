@@ -181,6 +181,17 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
+	Name = "Chat Spy(permite ver chats privados)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Chat-spy-20280"))(); NotificationOn("Chat Spy")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
 	Name = "Console"
 })
 
