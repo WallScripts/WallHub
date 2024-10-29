@@ -57,7 +57,7 @@ local Section = Tab:AddSection({
 
 Tab:AddButton({
 	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("hhttps://raw.githubusercontent.com/WallScripts/FlyGui/refs/heads/main/V1"))(); Notification("Fly GUI")
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/FlyGui/refs/heads/main/V1"))(); Notification("Fly GUI")
       		print("botão pressionado")
   	end    
 })
