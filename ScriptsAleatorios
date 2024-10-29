@@ -40,6 +40,18 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
+	Name = "The Haunt"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/TheHaunt"))(); Notification("The Haunt")
+      		print("botão pressionado")
+  	end    
+})
+
+
+local Section = Tab:AddSection({
 	Name = "FlyGui (minha versão)"
 })
 
@@ -1093,6 +1105,7 @@ Tab:AddButton({
 
 Tab:AddParagraph("Rags to Richers ","Tora Scripts(Youtube: https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")
 Tab:AddParagraph("Impossible Squid Game! Inpossible Glass Bridge 2","Tora Scripts(Youtube: https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")
+Tab:AddParagraph("The Haunt","Tora Scripts(Youtube: https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")
 Tab:AddButton({
 	Name = "Copiar YouTube",
 	Callback = function()copyToClipboard3("https://youtube.com/@toraisme?si=yDOxRPg-ImtUKN1W")    
