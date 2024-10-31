@@ -550,27 +550,6 @@ Tab:AddButton({
   	end    
 })
 
-local Tab = Window:MakeTab({
-	Name = "Public Bathroom Simulator",
-	Icon = "rbxassetid://7733799795",
-	PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-	Name = "Public Bathroom Simulator(Budgie Hub)"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Public-Bathroom-Simulator-Budgie-Hub-10621"))(); Notification("Public Bathroom Simulator(Budgie Hub)")
-      		print("botão pressionado")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Public Bathroom Simulator: Extra (Project L)(annoy players)"
-})
-
 Tab:AddButton({
 	Name = "Executar",
 	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Public-Bathroom-Simulator-Project-L-9337"))(); Notification("Public Bathroom Simulator: extra (Project L)(Annoy Players")
