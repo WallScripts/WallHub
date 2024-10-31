@@ -550,12 +550,34 @@ Tab:AddButton({
   	end    
 })
 
+local Tab = Window:MakeTab({
+	Name = "Public Bathroom Sim...",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Public Bathroom Simulator(Budgie Hub)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Public-Bathroom-Simulator-Budgie-Hub-10621"))(); Notification("Public Bathroom Simulator(Budgie Hub)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Public Bathroom Simulator: Extra (Project L)(annoy players)"
+})
+
 Tab:AddButton({
 	Name = "Executar",
 	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Public-Bathroom-Simulator-Project-L-9337"))(); Notification("Public Bathroom Simulator: extra (Project L)(Annoy Players")
       		print("botão pressionado")
   	end    
 })
+
 
 local Tab = Window:MakeTab({
 	Name = "UGC (Auto Farm)",
@@ -1104,7 +1126,7 @@ local Section = Tab:AddSection({
 	Name = "Doors👁"
 })
 
-Tab:AddParagraph("ms paint v3","não cabe aqui kkjlk(discord: https://discord.com/invite/cfyMptntHr)")
+Tab:AddParagraph("Doors | ms paint v3","não cabe aqui kkjlk(discord: https://discord.com/invite/cfyMptntHr)")
 Tab:AddButton({
 	Name = "Copiar Discord",
 	Callback = function()copyToClipboard2("https://discord.com/invite/cfyMptntHr")    
@@ -1116,19 +1138,15 @@ local Section = Tab:AddSection({
 	Name = "Funky Friday"
 })
 
-Tab:AddParagraph("Nullfire: Funky Friday ","xinfernusx e rob_dcg_yt (discord)")
+Tab:AddParagraph("Funky Friday | Nullfire","xinfernusx e rob_dcg_yt (discord)")
 Tab:AddParagraph("Funky Friday (Simple AutoPlay","Nadir & Wally (Os mano não botou nenhum link)")
-
-local Section = Tab:AddSection({
-	Name = "Funky Friday"
-})
 
 local Section = Tab:AddSection({
 	Name = "Public Bathroom Simulator"
 })
 
-Tab:AddParagraph("Public Bathroom Simulator (Budgie Hub)","("Hello")
-Tab:AddParagraph("Public Bathroom Simulator:Extra (annoy players) (Project L)","("Hello")
+Tab:AddParagraph("Public Bathroom Simulator | Budgie Hub","ADSKer and Tomato2007")
+Tab:AddParagraph("Public Bathroom Simulator | L(Annoy Players)","Não achei link")
 
 local Section = Tab:AddSection({
 	Name = "Infinite Money"
