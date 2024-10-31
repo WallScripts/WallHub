@@ -1149,8 +1149,8 @@ local Section = Tab:AddSection({
 	Name = "Public Bathroom Simulator"
 })
 
-Tab:AddParagraph("Public Bathroom Simulator (Budgie Hub)","("Sla")
-Tab:AddParagraph("Public Bathroom Simulator:Extra (annoy players) (Project L)","("Sla")
+Tab:AddParagraph("Public Bathroom Simulator (Budgie Hub)","("Hello")
+Tab:AddParagraph("Public Bathroom Simulator:Extra (annoy players) (Project L)","("Hello")
 
 local Section = Tab:AddSection({
 	Name = "Infinite Money"
