@@ -551,6 +551,35 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
+	Name = "Public Bathroom Simulator",
+	Icon = "rbxassetid://7733799795",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Public Bathroom Simulator(Budgie Hub)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Public-Bathroom-Simulator-Budgie-Hub-10621"))(); Notification("Public Bathroom Simulator(Budgie Hub)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Public Bathroom Simulator: Extra (Project L)(annoy players)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Public-Bathroom-Simulator-Project-L-9337"))(); Notification("Public Bathroom Simulator: extra (Project L)(Annoy Players")
+      		print("botão pressionado")
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
 	Name = "UGC (Auto Farm)",
 	Icon = "rbxassetid://7733799795",
 	PremiumOnly = false
@@ -1111,6 +1140,17 @@ local Section = Tab:AddSection({
 
 Tab:AddParagraph("Nullfire: Funky Friday ","xinfernusx e rob_dcg_yt (discord)")
 Tab:AddParagraph("Funky Friday (Simple AutoPlay","Nadir & Wally (Os mano não botou nenhum link)")
+
+local Section = Tab:AddSection({
+	Name = "Funky Friday"
+})
+
+local Section = Tab:AddSection({
+	Name = "Public Bathroom Simulator"
+})
+
+Tab:AddParagraph("Public Bathroom Simulator (Budgie Hub)","("")
+Tab:AddParagraph("Public Bathroom Simulator:Extra (annoy players) (Project L)","("Sla")
 
 local Section = Tab:AddSection({
 	Name = "Infinite Money"
