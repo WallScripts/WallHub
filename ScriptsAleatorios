@@ -578,7 +578,6 @@ Tab:AddButton({
   	end    
 })
 
-
 local Tab = Window:MakeTab({
 	Name = "UGC (Auto Farm)",
 	Icon = "rbxassetid://7733799795",
