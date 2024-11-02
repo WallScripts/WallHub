@@ -7,7 +7,7 @@ local Window = OrionLib:MakeWindow({IntroText = "Wall Hub", IntroIcon = "rbxasse
 local function Notification(ScriptName)
     OrionLib:MakeNotification({
     Name = "Wall Hub System",
-    Content = "O Script ".. ScriptName .. " foi executado",
+    Content = "O ".. ScriptName .. " foi executado",
     Image = "rbxassetid://7733911828",
     Time = 5
     })
