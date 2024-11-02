@@ -181,12 +181,34 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
+	Name = "Nameless Admin"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source"))(); Notification("Nameless Admin")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
 	Name = "Dex"
 })
 
 Tab:AddButton({
 	Name = "Executar",
 	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Keyless-mobile-dex-17888"))(); Notification("Dex")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Simple Spy"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))(); Notification("Simple Spy")
       		print("botão pressionado")
   	end    
 })
