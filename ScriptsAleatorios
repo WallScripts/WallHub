@@ -181,6 +181,17 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
+	Name = "Dex"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Keyless-mobile-dex-17888"))(); Notification("Dex")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
 	Name = "Chat Spy(permite ver chats privados)"
 })
 
