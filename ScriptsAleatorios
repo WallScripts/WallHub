@@ -1001,6 +1001,28 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
+	Name = "Porão",
+	Icon = "rbxassetid://7743869054",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Porão","Aqui fica uns negócios aleatórios q não tem o porque eu fazer uma tab e também um lugar pro adm armazenar uns script pra botar depois em uma tab aí, se eu achar interessante. Nada aqui é organizado então não se preocupese tiver tudo bugado.")
+
+Tab:AddButton({
+	Name = "Cart Ride Into Rdite",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))(); Notification("É o Porão, não vou me preocupa com Notification não kljjl")
+      		print("botão pressionado")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "The Maze zefhyr",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/The-Maze-Zephyr-V3-10777"))(); Notification("É o Porão, não vou me preocupa com Notification não kljjl")
+      		print("botão pressionado")
+  	end    
+})
+
+local Tab = Window:MakeTab({
 	Name = "Server🌐",
 	Icon = "rbxassetid://7733954760",
 	PremiumOnly = false
