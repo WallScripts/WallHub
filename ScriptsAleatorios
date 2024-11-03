@@ -1010,7 +1010,7 @@ Tab:AddParagraph("Porão","Aqui fica uns negócios aleatórios q não tem o porq
 
 Tab:AddButton({
 	Name = "Cart Ride Into Rdite",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))(); Notification("É o Porão, não vou me preocupa com Notification não kljjl")
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Cart-Ride-Into-Rdite!-Cart-Ride-Trolling-GUI-1498"))(); Notification("É o Porão, não vou me preocupa com Notification não kljjl")
       		print("botão pressionado")
   	end    
 })
