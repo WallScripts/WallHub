@@ -1420,7 +1420,7 @@ infoTab:AddButton({
 
 OrionLib:Init()
 
---Comandos 
+-- Comandos 
 
 local Players = game:GetService("Players")
 local lp = Players.LocalPlayer
@@ -1438,7 +1438,7 @@ end
 
 -- Função para o comando !help
 local function Help()
-    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard ,!rtxon ,!serverbrowser ,!serverhop ,!walkonwall ,!siriushub ,!animationsr15 ,!animationsr6 ]]
+    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard, !rtxon, !serverbrowser, !serverhop, !walkonwall, !siriushub, !animationsr15, !animationsr6 ]]
     NotificationCmds(helpMessage)
 end
 
@@ -1471,13 +1471,13 @@ local commands = {
         NotificationCmds("digite: /console") 
     end,
     ["!keyboard"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))() end,
-    ["!rtxon"] = function() loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))() end,
+    ["!rtxon"] = function() loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'), true))() end,
     ["!serverbrowser"] = function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))() end,
     ["!serverhop"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/CH0LhrEe"))() end,
     ["!walkonwall"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))() end,
     ["!siriushub"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sirius-7420"))() end,
     ["!animationsr15"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))() end,
-    [!animationsr6"] = function() loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))() end,
+    ["!animationsr6"] = function() loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'), true))() end,
 }
 
 -- Detecta mensagens no chat, apenas uma vez
@@ -1505,4 +1505,4 @@ NotificationCmds("Wall Hub executado com sucesso.")
 task.wait(8)
 NotificationCmds("Digite !help pra ver a lista de comandos.")
 
-print("Se você viu isso é porque o script foi executado com sucesso.")
+print("Se você viu isso é porque o script foi executado")
