@@ -1351,3 +1351,80 @@ infoTab:AddButton({
 })
 
 OrionLib:Init()
+
+--Comandos 
+
+local Players = game:GetService("Players")
+local lp = Players.LocalPlayer
+local commandConnected = false
+local lastCommand = ""
+
+-- Função de notificação para execução de comandos
+local function NotificationCmds(message)
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+        Text = "[WallHubSystem]: " .. message,
+        Color = Color3.fromRGB(0, 139, 139),
+        Font = Enum.Font.SourceSansBold
+    })
+end
+
+-- Função para o comando !help
+local function Help()
+    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard ]]
+    NotificationCmds(helpMessage)
+end
+
+-- Dicionário de comandos
+local commands = {
+    ["!wallhub"] = WallHub,
+    ["!resetwallhub"] = function() 
+        OrionLib:Destroy() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/Scripts"))() 
+    end,
+    ["!killwallhub"] = function() OrionLib:Destroy() end,
+    ["!tptool"] = Tp,
+    ["!fly"] = Fly,
+    ["!help"] = Help,
+    ["!thehaunt"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/TheHaunt"))() end,
+    ["!jumpandspeed"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/PUdkcyUP"))() end,
+    ["!espsimples"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP"))() end,
+    ["!safespot"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/k6wxsefJ"))() end,
+    ["!noclip"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/DEBmKDhK"))() end,
+    ["!invisible"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/mJj40Mzn"))() end,
+    ["!droptools"] = DropTools,  -- supondo que você já criou a função DropTools
+    ["!shiftlock"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/TZ7H0Jdx"))() end,
+    ["!infiniteyield"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))() end,
+    ["!namelessadmin"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))() end,
+    ["!dex"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Keyless-mobile-dex-17888"))() end,
+    ["!simplespy"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))() end,
+    ["!chatspy"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Chat-spy-20280"))() end,
+    ["!console"] = Console,  -- função Console já existente
+    ["!keyboard"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))() end,
+}
+
+-- Detecta mensagens no chat, apenas uma vez
+if not commandConnected then
+    commandConnected = true
+    lp.Chatted:Connect(function(message)
+        if message ~= lastCommand then
+            lastCommand = message
+            local commandFunc = commands[message:lower()]
+            if commandFunc then
+                task.wait(2)
+                commandFunc()
+                NotificationCmds("Comando Executado.")
+            else
+                print("Tem certeza?:", message)
+            end
+        end
+    end)
+end
+
+-- Mensagem
+task.wait(5)
+NotificationCmds("Wall Hub executado com sucesso. ")
+
+task.wait(8)
+NotificationCmds("Digite !help pra ver a lista de comandos.")
+
+print("Se você viu isso é porque o script foi executado com sucesso ")
