@@ -1418,7 +1418,7 @@ local commands = {
     ["!serverbrowser"] = function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))() end,
     ["!serverhop"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/CH0LhrEe"))() end,
     ["!walkonwall"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))() end,
-    ["!siriushub = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sirius-7420"))() end,
+    ["!siriushub"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sirius-7420"))() end,
 }
 
 -- Detecta mensagens no chat, apenas uma vez
