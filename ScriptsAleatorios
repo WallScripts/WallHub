@@ -20,6 +20,10 @@ local function Notification(ScriptName)
     Image = "rbxassetid://7733911828",
     Time = 5
     })
+    local Sound = Instance.new("Sound", game.Workspace)
+    Sound.SoundId = "rbxassetid://1092093337"
+    Sound.Volume = 1
+    Sound:Play()
 end
 
 -- NotificaçãoOn
