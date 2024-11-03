@@ -1401,7 +1401,7 @@ local commands = {
     ["!console"] = Console,  -- função Console já existente
     ["!keyboard"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))() end,
     ["!rtxon"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))() end,
-    ["!serverbrowser = function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))() end,
+    ["!serverbrowser"] = function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))() end,
     ["!serverhop"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/CH0LhrEe"))() end,
     ["!walkonwall"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))() end,
 }
@@ -1426,9 +1426,9 @@ end
 
 -- Mensagem
 task.wait(5)
-NotificationCmds("Wall Hub executado com sucesso. ")
+NotificationCmds("Wall Hub executado com sucesso.")
 
 task.wait(8)
 NotificationCmds("Digite !help pra ver a lista de comandos.")
 
-print("Se você viu isso é porque o script foi executado com sucesso ")
+print("Se você viu isso é porque o script foi executado com sucesso.")
