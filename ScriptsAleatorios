@@ -1403,7 +1403,7 @@ local commands = {
     ["!rtxon"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))() end,
     ["!serverbrowser = function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))() end,
     ["!serverhop"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/CH0LhrEe"))() end,
-    ["!walkonwall"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+    ["!walkonwall"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))() end,
 }
 
 -- Detecta mensagens no chat, apenas uma vez
