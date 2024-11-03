@@ -1381,7 +1381,7 @@ end
 
 -- Função para o comando !help
 local function Help()
-    local helpMessage = [[Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard ,!rtxon ,!serverbrowser ,!serverhop ,!walkonwall ,!siriushub]]
+    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard ,!rtxon ,!serverbrowser ,!serverhop ,!walkonwall ,!siriushub ]]
     NotificationCmds(helpMessage)
 end
 
