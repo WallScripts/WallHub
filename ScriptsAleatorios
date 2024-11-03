@@ -22,7 +22,7 @@ local function Notification(ScriptName)
     })
     local Sound = Instance.new("Sound", game.Workspace)
     Sound.SoundId = "rbxassetid://1092093337"
-    Sound.Volume = 1
+    Sound.Volume = 0.08
     Sound:Play()
 end
 
