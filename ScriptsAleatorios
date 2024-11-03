@@ -192,6 +192,17 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
+	Name = "FE Animations"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))(); Notification("FE Animations")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
 	Name = "Dex"
 })
 
@@ -1381,7 +1392,7 @@ end
 
 -- Função para o comando !help
 local function Help()
-    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard ,!rtxon ,!serverbrowser ,!serverhop ,!walkonwall ,!siriushub ]]
+    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard ,!rtxon ,!serverbrowser ,!serverhop ,!walkonwall ,!siriushub ,!animations ]]
     NotificationCmds(helpMessage)
 end
 
@@ -1419,6 +1430,7 @@ local commands = {
     ["!serverhop"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/CH0LhrEe"))() end,
     ["!walkonwall"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))() end,
     ["!siriushub"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sirius-7420"))() end,
+    ["!animations"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))() end,
 }
 
 -- Detecta mensagens no chat, apenas uma vez
