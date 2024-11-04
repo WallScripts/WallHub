@@ -15,7 +15,6 @@ local Window = OrionLib:MakeWindow({IntroText = "Wall Hub", IntroIcon = "rbxasse
 --Som da notificação 
 
 local SoundHub = Instance.new("Sound", game.Workspace)
-local SoundHub = Instance.new("Sound", game.Workspace)
 SoundHub.SoundId = "rbxassetid://1092093337"
 SoundHub.Volume = 0.06
 
@@ -1434,7 +1433,6 @@ OrionLib:Init()
 
 --Musiquinha de fundo
 
-local Music = Instance.new("Sound", game.Workspace)
 local Music = Instance.new("Sound", game.Workspace)
 Music.SoundId = "rbxassetid://1837768517"
 Music.Volume = 0.08
