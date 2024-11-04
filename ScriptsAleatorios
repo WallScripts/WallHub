@@ -39,6 +39,7 @@ local function NotificationOn(ScriptName)
         Image = "rbxassetid://7733911828",
         Time = 5
     })
+    SoundHub:Play()
 end
 
 -- NotificaçãoOff
@@ -48,7 +49,8 @@ local function NotificationOff(ScriptName)
         Content = " ".. ScriptName .. " Desativado",
         Image = "rbxassetid://7733911828",
         Time = 5
-    })
+        SoundHub:Play()
+        })
 end
 
 local Tab = Window:MakeTab({
@@ -1114,7 +1116,8 @@ local function copyToClipboard(text)
         Content = text .. " foi copiado para a área de transferência.",
         Image = "rbxassetid://7733911828",
         Time = 5
-    })
+        SoundHub:Play()
+        })
 end
 
 --Funções2
@@ -1126,7 +1129,8 @@ local function copyToClipboard2(text)
         Content = text .. " foi copiado para a área de transferência.",
         Image = "rbxassetid://7733911828",
         Time = 5
-    })
+        SoundHub:Play()
+        })
 end
 
 --Funções3
@@ -1138,7 +1142,8 @@ local function copyToClipboard3(text)
         Content = text .. " foi copiado para a área de transferência.",
         Image = "rbxassetid://7733911828",
         Time = 5
-    })
+        SoundHub:Play()
+        })
 end
 
 local Tab = Window:MakeTab({
@@ -1354,9 +1359,10 @@ local playerName = player.Name
 
 OrionLib:MakeNotification({
     Name = "Bem-vindo ao Wall Hub",
-    Content = "Olá, " .. playerName .. "!",
+    Content = "Eai , " .. playerName .. "",
     Image = "rbxassetid://7733911828",
     Time = 5
+    SoundHub:Play()
 })
 
 print("Nome do jogador: " .. playerName)
@@ -1373,7 +1379,8 @@ local function copyToClipboard(text)
         Content = text .. " foi copiado para a área de transferência.",
         Image = "rbxassetid://7733911828",
         Time = 5
-    })
+        SoundHub:Play()    
+        })
 end
 
 local Players = game:GetService("Players")
