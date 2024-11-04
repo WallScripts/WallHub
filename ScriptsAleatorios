@@ -1432,6 +1432,13 @@ infoTab:AddButton({
 
 OrionLib:Init()
 
+--Musiquinha de fundo
+
+local Music = Instance.new("Sound", game.Workspace)
+local Music = Instance.new("Sound", game.Workspace)
+Music.SoundId = "rbxassetid://1837768517"
+Music.Volume = 0.08
+Music:Play()
 -- Comandos 
 
 local Players = game:GetService("Players")
