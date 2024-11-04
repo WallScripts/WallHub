@@ -1437,6 +1437,7 @@ local Music = Instance.new("Sound", game.Workspace)
 Music.SoundId = "rbxassetid://1837768517"
 Music.Volume = 0.08
 Music:Play()
+end
 -- Comandos 
 
 local Players = game:GetService("Players")
