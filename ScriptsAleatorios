@@ -15,21 +15,20 @@ local Window = OrionLib:MakeWindow({IntroText = "Wall Hub", IntroIcon = "rbxasse
 --Som da notificação 
 
 local SoundHub = Instance.new("Sound", game.Workspace)
-    Sound.SoundId = "rbxassetid://1092093337"
-    Sound.Volume = 0.08
-    Sound:Play()
-end
-
+local SoundHub = Instance.new("Sound", game.Workspace)
+SoundHub.SoundId = "rbxassetid://1092093337"
+SoundHub.Volume = 0.08
 
 --Notificação
+
 local function Notification(ScriptName)
     OrionLib:MakeNotification({
-    Name = "Wall Hub System",
-    Content = "O ".. ScriptName .. " foi executado",
-    Image = "rbxassetid://7733911828",
-    Time = 5
-    SoundHub:Play() 
+        Name = "Wall Hub System",
+        Content = "O " .. ScriptName .. " foi executado",
+        Image = "rbxassetid://7733911828",
+        Time = 5
     })
+    SoundHub:Play()
 end
 
 -- NotificaçãoOn
