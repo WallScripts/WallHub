@@ -1,4 +1,3 @@
---pode aprender a criar o seu hub pelo meu
 --Feito por Wall Scripts 
 
 local inviteModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
