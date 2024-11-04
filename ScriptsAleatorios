@@ -1,3 +1,4 @@
+--pode aprender a criar o seu hub pelo meu
 --Feito por Wall Scripts 
 
 local inviteModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
@@ -13,6 +14,7 @@ local Window = OrionLib:MakeWindow({IntroText = "Wall Hub", IntroIcon = "rbxasse
 
 --Som da notificação 
 
+local SoundHub = Instance.new("Sound", game.Workspace)
 local SoundHub = Instance.new("Sound", game.Workspace)
 SoundHub.SoundId = "rbxassetid://1092093337"
 SoundHub.Volume = 0.06
@@ -37,7 +39,6 @@ local function NotificationOn(ScriptName)
         Image = "rbxassetid://7733911828",
         Time = 5
     })
-    SoundHub:Play()
 end
 
 -- NotificaçãoOff
@@ -47,8 +48,7 @@ local function NotificationOff(ScriptName)
         Content = " ".. ScriptName .. " Desativado",
         Image = "rbxassetid://7733911828",
         Time = 5
-        SoundHub:Play()
-        })
+    })
 end
 
 local Tab = Window:MakeTab({
@@ -1114,8 +1114,7 @@ local function copyToClipboard(text)
         Content = text .. " foi copiado para a área de transferência.",
         Image = "rbxassetid://7733911828",
         Time = 5
-        SoundHub:Play()
-        })
+    })
 end
 
 --Funções2
@@ -1127,8 +1126,7 @@ local function copyToClipboard2(text)
         Content = text .. " foi copiado para a área de transferência.",
         Image = "rbxassetid://7733911828",
         Time = 5
-        SoundHub:Play()
-        })
+    })
 end
 
 --Funções3
@@ -1140,8 +1138,7 @@ local function copyToClipboard3(text)
         Content = text .. " foi copiado para a área de transferência.",
         Image = "rbxassetid://7733911828",
         Time = 5
-        SoundHub:Play()
-        })
+    })
 end
 
 local Tab = Window:MakeTab({
@@ -1357,10 +1354,9 @@ local playerName = player.Name
 
 OrionLib:MakeNotification({
     Name = "Bem-vindo ao Wall Hub",
-    Content = "Eai , " .. playerName .. "",
+    Content = "Olá, " .. playerName .. "!",
     Image = "rbxassetid://7733911828",
     Time = 5
-    SoundHub:Play()
 })
 
 print("Nome do jogador: " .. playerName)
@@ -1377,8 +1373,7 @@ local function copyToClipboard(text)
         Content = text .. " foi copiado para a área de transferência.",
         Image = "rbxassetid://7733911828",
         Time = 5
-        SoundHub:Play()    
-        })
+    })
 end
 
 local Players = game:GetService("Players")
@@ -1430,13 +1425,6 @@ infoTab:AddButton({
 
 OrionLib:Init()
 
---Musiquinha de fundo
-
-local Music = Instance.new("Sound", game.Workspace)
-Music.SoundId = "rbxassetid://1837768517"
-Music.Volume = 0.08
-Music:Play()
-end
 -- Comandos 
 
 local Players = game:GetService("Players")
