@@ -1,6 +1,13 @@
 --pode aprender a criar o seu hub pelo meu
 --Feito por Wall Scripts 
 
+
+--Música de fundo
+
+local Music = Instance.new("Sound", game.Workspace)
+Music.SoundId = "rbxassetid://1837768517"
+Music.Volume = 0.08
+
 local inviteModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
 inviteModule.Prompt({
 	name = "Wall Hub",
@@ -8,6 +15,7 @@ inviteModule.Prompt({
 })
 
 Wait(5)
+Music:Play()
 
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Giangplay/Script/main/Orion_Library_PE_V2.lua")))()
 local Window = OrionLib:MakeWindow({IntroText = "Wall Hub", IntroIcon = "rbxassetid://8834748103",Name = ("Wall Hub 1.3 | Scripts Aleatórios".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, InEnabled = true, ConfigFolder = "Wall Hub"})
@@ -1424,13 +1432,6 @@ infoTab:AddButton({
 })
 
 OrionLib:Init()
-
---Música de fundo
-
-local Music = Instance.new("Sound", game.Workspace)
-Music.SoundId = "rbxassetid://1837768517"
-Music.Volume = 0.08
-Music:Play()
 
 -- Comandos 
 
