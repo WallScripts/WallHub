@@ -1491,6 +1491,7 @@ local commands = {
     ["!siriushub"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sirius-7420"))() end,
     ["!animationsr15"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))() end,
     ["!animationsr6"] = function() loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'), true))() end,
+    ["!stopmusic"] = function() Music:Stop()
 }
 
 -- Detecta mensagens no chat, apenas uma vez
@@ -1511,11 +1512,14 @@ if not commandConnected then
     end)
 end
 
--- Mensagem
+-- Mensagens
 task.wait(5)
 NotificationCmds("Wall Hub executado com sucesso.")
 
 task.wait(8)
 NotificationCmds("Digite !help pra ver a lista de comandos.")
+
+task.wait(12)
+NotificationCmds("Não gostou da música? Digite !stopmusic pra parar a músic.")
 
 print("Se você viu isso é porque o script foi executado")
