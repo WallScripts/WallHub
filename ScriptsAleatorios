@@ -4,9 +4,9 @@
 
 --Música de fundo
 
-local MusicWallHub = Instance.new("Sound", game.Workspace)
-MusicWallHub.SoundId = "rbxassetid://1837768517"
-MusicWallHub.Volume = 0.08
+local Music = Instance.new("Sound", game.Workspace)
+Music.SoundId = "rbxassetid://1837768517"
+Music.Volume = 0.08
 
 local inviteModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
 inviteModule.Prompt({
@@ -15,7 +15,7 @@ inviteModule.Prompt({
 })
 
 Wait(5)
-MusicWallHub:Play()
+Music:Play()
 
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Giangplay/Script/main/Orion_Library_PE_V2.lua")))()
 local Window = OrionLib:MakeWindow({IntroText = "Wall Hub", IntroIcon = "rbxassetid://8834748103",Name = ("Wall Hub 1.3 | Scripts Aleatórios".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, InEnabled = true, ConfigFolder = "Wall Hub"})
@@ -194,18 +194,6 @@ Tab:AddButton({
       		print("botão pressionado")
   	end    
 })
-
-local Section = Tab:AddSection({
-	Name = "Telekinesis"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-Telekinesis-V5-21542"))(); Notification("Telekinesis")
-      		print("botão pressionado")
-  	end    
-})
-
 
 local Section = Tab:AddSection({
 	Name = "Infinite Yield"
@@ -1463,7 +1451,7 @@ end
 
 -- Função para o comando !help
 local function Help()
-    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard, !rtxon, !serverbrowser, !serverhop, !walkonwall, !siriushub, !animationsr15, !animationsr6 ,!telekinesis ]]
+    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard, !rtxon, !serverbrowser, !serverhop, !walkonwall, !siriushub, !animationsr15, !animationsr6 ]]
     NotificationCmds(helpMessage)
 end
 
@@ -1504,7 +1492,6 @@ local commands = {
     ["!animationsr15"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))() end,
     ["!animationsr6"] = function() loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'), true))() end,
     ["!stopmusic"] = function() Music:Stop() end,
-    ["!telekinesis"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-Telekinesis-V5-21542"))()
 }
 
 -- Detecta mensagens no chat, apenas uma vez
