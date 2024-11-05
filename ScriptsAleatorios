@@ -218,6 +218,18 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
+	Name = "Telekinesis"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-Telekinesis-V5-21542"))(); Notification("Telekinesis")
+      		print("botão pressionado")
+  	end    
+})
+
+
+local Section = Tab:AddSection({
 	Name = "Animations (r15)"
 })
 
