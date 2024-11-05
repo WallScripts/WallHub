@@ -633,6 +633,17 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
+	Name = "Funky Friday(Uni Hub) (best)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Funky-Friday-OP-20665"))(); Notification("Funky Friday(Uni Hub)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
 	Name = "Funky Friday AutoPlay(Null Fire)"
 })
 
@@ -1264,6 +1275,13 @@ local Section = Tab:AddSection({
 	Name = "Funky Friday"
 })
 
+Tab:AddParagraph("Funky Friday | Uni Hub","Não sei (discord: https://discord.gg/44PHnFKxq5)")
+Tab:AddButton({
+	Name = "Copiar Discord",
+	Callback = function()copyToClipboard2("https://discord.gg/44PHnFKxq5")    
+      		print("botão pressionado")
+  	end
+})
 Tab:AddParagraph("Funky Friday | Nullfire","xinfernusx e rob_dcg_yt (discord)")
 Tab:AddParagraph("Funky Friday (Simple AutoPlay","Nadir & Wally (Os mano não botou nenhum link)")
 
