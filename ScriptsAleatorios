@@ -228,6 +228,17 @@ Tab:AddButton({
   	end    
 })
 
+local Section = Tab:AddSection({
+	Name = "Black Hole"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-black-hole-19267"))(); Notification("Black Hole")
+      		print("botão pressionado")
+  	end    
+})
+
 
 local Section = Tab:AddSection({
 	Name = "Animations (r15)"
@@ -1493,7 +1504,7 @@ end
 
 -- Função para o comando !help
 local function Help()
-    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard, !rtxon, !serverbrowser, !serverhop, !walkonwall, !siriushub, !animationsr15, !animationsr6 ,!gameprober ]]
+    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard, !rtxon, !serverbrowser, !serverhop, !walkonwall, !siriushub, !animationsr15, !animationsr6 ,!gameprober ,!blackhole ]]
     NotificationCmds(helpMessage)
 end
 
@@ -1535,6 +1546,7 @@ local commands = {
     ["!animationsr6"] = function() loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'), true))() end,
     ["!stopmusic"] = function() Music:Stop() end,
     ["!gameprober"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-GameProber-17244"))() end,
+    ["!blackhole"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-black-hole-19267"))() end,
 }
 
 -- Detecta mensagens no chat, apenas uma vez
