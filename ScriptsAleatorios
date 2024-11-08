@@ -263,6 +263,18 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
+	Name = "Game Prober"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function(); Notification("Dex")
+      		print("botão pressionado")
+  	end    
+})
+
+
+local Section = Tab:AddSection({
 	Name = "Sirius Hub"
 })
 
@@ -1382,7 +1394,7 @@ Tab:AddButton({
 
 Tab:AddButton({
 	Name = "Resetar Wall Hub",
-	Callback = function()OrionLib:Destroy(); loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/Scripts"))()
+	Callback = function()OrionLib:Destroy(); loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/ScriptsAleatorios"))()
       		print("Wall Hub resetado")
   	end    
 })
@@ -1490,7 +1502,7 @@ local commands = {
     ["!wallhub"] = WallHub,
     ["!resetwallhub"] = function() 
         OrionLib:Destroy() 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/Scripts"))() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/ScriptsAleatorios"))() 
     end,
     ["!killwallhub"] = function() OrionLib:Destroy() end,
     ["!tptool"] = Tp,
