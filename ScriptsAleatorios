@@ -406,10 +406,6 @@ Tab:AddButton({
   	end    
 })
 
-local Section = Tab:AddSection({
-	Name = "Armazenar Texto(Vai armazenar mensagens no console)"
-})
-
 
 local Tab = Window:MakeTab({
 	Name = "Player",
