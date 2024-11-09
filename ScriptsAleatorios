@@ -1198,7 +1198,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "Atualizações 🎉",
+	Name = "Atualizações ",
 	Icon = "rbxassetid://7743878358",
 	PremiumOnly = false
 })
@@ -1208,9 +1208,24 @@ local Section = Tab:AddSection({
 	Name = "Atualizações"
 })
 
-Tab:AddParagraph("v1.1","AGORA DÁ PRA MOVER O GUI")
-Tab:AddParagraph("v1.2","3 novos scripts: esp, espectar, speed and  jump modifier e safe spot")
-Tab:AddParagraph("v1.3","AGORA TEM UMA MINI INTRO")
+Tab:AddParagraph("v0.1","AGORA DÁ PRA MOVER O GUI")
+Tab:AddParagraph("v0.2","3 novos scripts: esp, espectar, speed and  jump modifier e safe spot")
+Tab:AddParagraph("v0.3","AGORA TEM UMA MINI INTRO")
+Tab:AddParagraph("v0.4","tab de inf money")
+Tab:AddParagraph("v0.5","Notificaçõesquando o script executa")
+Tab:AddParagraph("v0.6","agora tem um mini convite pro discord ")
+Tab:AddParagraph("v0.7","Tem uma músicade fundo")
+Tab:AddParagraph("v0.8","tab de trollar/diversão")
+Tab:AddParagraph("v0.9","Nois tem agora a nossa versãodo OrionLibrary traduzida")
+Tab:AddParagraph("v1.0","Nova tab: public bathrom simulator")
+Tab:AddParagraph("v1.2","nova tab: porão")
+Tab:AddParagraph("v1.3","uma nova seção na tab "home" chamaada aleatóriedade")
+
+local Section = Tab:AddSection({
+	Name = "previsões"
+})
+
+Tab:AddParagraph("v1.4(prev)","bem peovavel q venha mais coisa pra seção "aleatoriedade" e tambémmais coisa pra tab "player" ")
 
 --Funções Copiar (slc pai tá muito especialista)
 
