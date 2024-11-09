@@ -1203,29 +1203,24 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("v0.1", "AGORA DÁ PRA MOVER O GUI")
+Tab:AddParagraph("v0.2", "3 novos scripts: esp, espectar, speed and jump modifier e safe spot")
+Tab:AddParagraph("v0.3", "AGORA TEM UMA MINI INTRO")
+Tab:AddParagraph("v0.4", "Tab de inf money")
+Tab:AddParagraph("v0.5", "Notificações quando o script executa")
+Tab:AddParagraph("v0.6", "Agora tem um mini convite pro Discord")
+Tab:AddParagraph("v0.7", "Tem uma música de fundo")
+Tab:AddParagraph("v0.8", "Tab de trollar/diversão")
+Tab:AddParagraph("v0.9", "Agora tem a nossa versão do Orion Library traduzida")
+Tab:AddParagraph("v1.0", "Nova tab: public bathroom simulator")
+Tab:AddParagraph("v1.2", "Nova tab: porão")
+Tab:AddParagraph("v1.3", "Uma nova seção na tab 'Home' chamada Aleatoriedade")
 
 local Section = Tab:AddSection({
-	Name = "Atualizações"
+    Name = "Previsões"
 })
 
-Tab:AddParagraph("v0.1","AGORA DÁ PRA MOVER O GUI")
-Tab:AddParagraph("v0.2","3 novos scripts: esp, espectar, speed and  jump modifier e safe spot")
-Tab:AddParagraph("v0.3","AGORA TEM UMA MINI INTRO")
-Tab:AddParagraph("v0.4","tab de inf money")
-Tab:AddParagraph("v0.5","Notificaçõesquando o script executa")
-Tab:AddParagraph("v0.6","agora tem um mini convite pro discord ")
-Tab:AddParagraph("v0.7","Tem uma músicade fundo")
-Tab:AddParagraph("v0.8","tab de trollar/diversão")
-Tab:AddParagraph("v0.9","Nois tem agora a nossa versãodo OrionLibrary traduzida")
-Tab:AddParagraph("v1.0","Nova tab: public bathrom simulator")
-Tab:AddParagraph("v1.2","nova tab: porão")
-Tab:AddParagraph("v1.3","uma nova seção na tab "home" chamaada aleatóriedade")
-
-local Section = Tab:AddSection({
-	Name = "previsões"
-})
-
-Tab:AddParagraph("v1.4(prev)","bem peovavel q venha mais coisa pra seção "aleatoriedade" e tambémmais coisa pra tab "player" ")
+Tab:AddParagraph("v1.4 (prev)", "Bem provável que venha mais coisa para a seção 'Aleatoriedade' e também mais coisas para a tab 'Player'")
 
 --Funções Copiar (slc pai tá muito especialista)
 
