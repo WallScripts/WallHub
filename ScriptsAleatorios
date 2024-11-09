@@ -393,6 +393,24 @@ Tab:AddTextbox({
     end
 })
 
+Tab:AddParagraph("Aleatoriedade","Depois daqui só tem coisa aleatória")
+
+local Section = Tab:AddSection({
+	Name = "Professor de japonês(???)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Japanese-Vocabulary-Teacher-19360"))(); Notification("Professor de japonês (???)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Armazenar Texto(Vai armazenar mensagens no console)"
+})
+
+
 local Tab = Window:MakeTab({
 	Name = "Player",
 	Icon = "rbxassetid://7733771472",
