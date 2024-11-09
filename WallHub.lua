@@ -1464,7 +1464,7 @@ Tab:AddButton({
 
 Tab:AddButton({
 	Name = "Resetar Wall Hub",
-	Callback = function()OrionLib:Destroy(); loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/ScriptsAleatorios"))()
+	Callback = function()OrionLib:Destroy(); loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/WallHub.lua"))()
       		print("Wall Hub resetado")
   	end    
 })
