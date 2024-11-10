@@ -516,6 +516,24 @@ Tab:AddDropdown({
 
 -----------Obrigado chat gpt por me ajuda a fazer o dropdown klkkj
 
+Tab:AddTextbox({
+    Name = "Gravidade(Normal 192.6)",
+    Default = "192.6",  -- Valor padrão
+    TextOnly = false,  -- Permite números e texto
+    Callback = function(Value)
+        -- Tenta converter o valor inserido em número
+        local gravidade = tonumber(Value)
+        
+        -- Se o valor for válido (um número)
+        if gravidade then
+            -- Ajusta a gravidade no Roblox com o valor inserido
+            game.Workspace.Gravity = gravidade
+        end
+    end
+})
+
+---------Chat também fez o textbox klkkkj
+
 Tab:AddButton({
 	Name = "Resetar Gravidade",
 	Callback = function()gravslider:Set(196.2)
