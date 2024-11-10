@@ -494,7 +494,7 @@ Tab:AddToggle({
 })
 
 Tab:AddButton({
-	Name = "Executar",
+	Name = "Anti Bang",
 	Callback = function()
         local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
 
