@@ -484,6 +484,38 @@ local gravslider = Tab:AddSlider({
     end    
 })
 
+Tab:AddDropdown({
+    Name = "Gravidade (bônus)",
+    Default = "9.81",  -- Gravidade da Terra (9.81 m/s²)
+    Options = {
+        "Mercúrio (3.7 m/s²)", 
+        "Vênus (8.87 m/s²)", 
+        "Terra (9.81 m/s²)", 
+        "Marte (3.71 m/s²)", 
+        "Júpiter (24.79 m/s²)", 
+        "Saturno (10.44 m/s²)", 
+        "Urano (8.69 m/s²)", 
+        "Netuno (11.15 m/s²)", 
+        "Plutão (0.62 m/s²)",  
+        "Ceres (0.27 m/s²)",  
+        "Haumea (0.44 m/s²)", 
+        "Makemake (0.47 m/s²)", 
+        "Eris (0.82 m/s²)", 
+        "Sol (274 m/s²)"  -- Gravidade do sol
+    },
+    Callback = function(Value)
+        -- Extraindo o valor numérico da gravidade selecionada
+        local gravidade = tonumber(Value:match("%((%-?%d+%.?%d*)"))  -- Extraindo o valor numérico
+        if gravidade then
+            -- Ajuste a gravidade no Roblox de acordo com a relação
+            local gravidadeRoblox = gravidade * (196.2 / 9.81)  -- Fazendo a conversão para o valor do Roblox
+            game.Workspace.Gravity = gravidadeRoblox  -- Definindo a nova gravidade no jogo
+        end
+    end
+})
+
+-----------Obrigado chat gpt por me ajuda a fazer o dropdown klkkj
+
 Tab:AddButton({
 	Name = "Resetar Gravidade",
 	Callback = function()gravslider:Set(196.2)
