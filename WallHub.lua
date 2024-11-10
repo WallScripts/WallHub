@@ -66,13 +66,13 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-	Name = "The Haunt"
+	Name = "Nenhum evento no momento(executa isso em algum evento do Roblox)"
 })
 
 Tab:AddButton({
 	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/TheHaunt"))(); Notification("The Haunt")
-      		print("botão pressionado")
+	Callback = function()
+	print("Nenhum evento no momento. ")
   	end    
 })
 
@@ -1608,7 +1608,7 @@ end
 
 -- Função para o comando !help
 local function Help()
-    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !thehaunt, !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard, !rtxon, !serverbrowser, !serverhop, !walkonwall, !siriushub, !animationsr15, !animationsr6 ,!gameprober ,!blackhole ]]
+    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !(Nenhum evento no momento), !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard, !rtxon, !serverbrowser, !serverhop, !walkonwall, !siriushub, !animationsr15, !animationsr6 ,!gameprober ,!blackhole ]]
     NotificationCmds(helpMessage)
 end
 
@@ -1623,7 +1623,7 @@ local commands = {
     ["!tptool"] = Tp,
     ["!fly"] = Fly,
     ["!help"] = Help,
-    ["!thehaunt"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/TheHaunt"))() end,
+    ["!(Nenhum evento no momento)"] = function()  end,
     ["!jumpandspeed"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/PUdkcyUP"))() end,
     ["!espsimples"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP"))() end,
     ["!safespot"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/k6wxsefJ"))() end,
