@@ -1199,6 +1199,18 @@ Tab:AddButton({
   	end    
 })
 
+local Section = Tab:AddSection({
+	Name = "Neutron"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/ZMKiRkQh",true))(); Notification("Neutron")
+      		print("botão pressionado")
+  	end    
+})
+
+
 local Tab = Window:MakeTab({
 	Name = "Porão",
 	Icon = "rbxassetid://7743869054",
