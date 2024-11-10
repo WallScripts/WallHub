@@ -991,7 +991,18 @@ local Section = Tab:AddSection({
 
 Tab:AddButton({
 	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Neutron.lua/main/MainNeutron.lua"))(); Notification("Aim Bot Universal(Neutron.lua)")
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Neutron.lua/main/MainNeutron.lua"))(); Notification("AimBot Universal(Neutron.lua)")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Aimbot Universal(Open Aimbot)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/ttwizz/Open-Aimbot/master/source.lua", true))(); Notification("AimBot Universal(Open Aimbot)")
       		print("botão pressionado")
   	end    
 })
