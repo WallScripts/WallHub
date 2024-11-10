@@ -413,7 +413,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddSlider({
+local SpeedSlider = Tab:AddSlider({
     Name = "WalkSpeed",
     Min = 0,
     Max = 400,
@@ -429,7 +429,14 @@ Tab:AddSlider({
     end    
 })
 
-Tab:AddSlider({
+Tab:AddButton({
+	Name = "Resetar Velocidade",
+	Callback = function()SpeedSlider:Set(16)
+      		print("Velocidade resetada")
+  	end    
+})
+
+local jpowerslider = Tab:AddSlider({
     Name = "JumpPower",
     Min = 0,
     Max = 400,
@@ -443,9 +450,17 @@ Tab:AddSlider({
         local humanoid = character:WaitForChild("Humanoid")
         humanoid.JumpPower = value        
     end    
-}) 
+})
 
-Tab:AddSlider({
+Tab:AddButton({
+	Name = "Resetar Jumppower",
+	Callback = function()jpowerslider:Set(50)
+      		print("Jpower Resetada")
+  	end    
+})
+
+
+local gravslider = Tab:AddSlider({
     Name = "Gravidade",
     Min = 0,
     Max = 1000,
@@ -457,6 +472,15 @@ Tab:AddSlider({
         game.Workspace.Gravity = value
     end    
 })
+
+Tab:AddButton({
+	Name = "Resetar Gravidade",
+	Callback = function()gravslider:Set(196.2)
+      		print("Gravidade resetada")
+  	end    
+})
+
+
 
 local infiniteJumpEnabled = false
 
