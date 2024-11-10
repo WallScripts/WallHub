@@ -297,6 +297,17 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
+	Name = "Orca"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))(); Notification("Orca")
+      		print("botão pressionado")
+  	end    
+})
+
+local Section = Tab:AddSection({
 	Name = "Simple Spy"
 })
 
@@ -1380,7 +1391,7 @@ end
 
 -- Função para o comando !help
 local function Help()
-    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !(Nenhum evento no momento), !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard, !rtxon, !serverbrowser, !serverhop, !walkonwall, !siriushub, !animationsr15, !animationsr6 ,!gameprober ,!blackhole ]]
+    local helpMessage = [[ Comandos Disponíveis: !wallhub, !resetwallhub, !killwallhub, !tptool, !fly, !help, !(Nenhum evento no momento), !jumpandspeed, !espsimples, !safespot, !noclip, !invisible, !droptools, !shiftlock, !infiniteyield, !namelessadmin, !dex, !simplespy, !chatspy, !console, !keyboard, !rtxon, !serverbrowser, !serverhop, !walkonwall, !siriushub, !animationsr15, !animationsr6 ,!gameprober ,!blackhole ,!orca ]]
     NotificationCmds(helpMessage)
 end
 
@@ -1423,6 +1434,7 @@ local commands = {
     ["!stopmusic"] = function() Music:Stop() end,
     ["!gameprober"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-GameProber-17244"))() end,
     ["!blackhole"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-black-hole-19267"))() end,
+    ["!orca"] = function() loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))() end,
 }
 
 -- Detecta mensagens no chat, apenas uma vez
