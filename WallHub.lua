@@ -861,7 +861,7 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
-	Name = "Public Bathroom Simulator: Extra (Project L)(annoy players)"
+	Name = "Public Bathroom Simulator: Extra (Project L)(annoy players)(foi de f porquw botou key)"
 })
 
 
