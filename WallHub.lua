@@ -535,7 +535,7 @@ Tab:AddTextbox({
 ---------Chat também fez o textbox klkkkj
 
 Tab:AddButton({
-	Name = "Resetar Gravidade",
+	Name = "Resetar Gravidade(slider)",
 	Callback = function()gravslider:Set(196.2)
       		print("Gravidade resetada")
   	end    
