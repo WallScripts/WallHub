@@ -630,7 +630,7 @@ Tab:AddButton({
 
         hrp.CFrame = lastCFrame
         workspace.FallenPartsDestroyHeight = -500
-                NotificationOn("Antibang")
+                NotificationOn("Antibang") --Porque você ia querer desativar 🤨🤨🤨
       		print("botão pressionado")
   	end    
 })
