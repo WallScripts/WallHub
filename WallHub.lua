@@ -580,10 +580,10 @@ Tab:AddToggle({
 })
 
 -- Variável de controle
-local Clip = true  -- Variável de controle para noclip
-local Noclipping  -- Variável para armazenar a conexão do evento RunService.Stepped
+local Clip = true  
+local Noclipping  
 
--- Função que executa o loop de noclip
+-- Função que executa o loop donoclip
 local function NoclipLoop()
     if not Clip and game.Players.LocalPlayer.Character then
         for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
@@ -608,9 +608,11 @@ Tab:AddToggle({
                     child.CanCollide = true
                 end
             end
-        else            
-            Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
-        end
+           NotificationOff("Noclip")
+	   else            
+	   Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
+         NotificationOn("Noclip")
+	end
     end
 })
 
