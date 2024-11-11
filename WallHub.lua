@@ -1,5 +1,4 @@
---pode aprender a criar o seu hub pelo meu
---Feito por Wall Scripts 
+--kkjjj
 
 
 --Música de fundo
@@ -578,6 +577,41 @@ Tab:AddToggle({
     Name = "inf jump",
     Default = false,
     Callback = toggleInfiniteJump
+})
+
+-- Variável de controle
+local Clip = true  -- Variável de controle para noclip
+local Noclipping  -- Variável para armazenar a conexão do evento RunService.Stepped
+
+-- Função que executa o loop de noclip
+local function NoclipLoop()
+    if not Clip and game.Players.LocalPlayer.Character then
+        for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+            if child:IsA("BasePart") and child.CanCollide == true then
+                child.CanCollide = false
+            end
+        end
+    end
+end
+
+Tab:AddToggle({
+    Name = "Noclip",
+    Default = false,
+    Callback = function(value)
+        Clip = not value  
+        if Clip then            
+            if Noclipping then
+                Noclipping:Disconnect()
+            end
+            for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                if child:IsA("BasePart") then
+                    child.CanCollide = true
+                end
+            end
+        else            
+            Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
+        end
+    end
 })
 
 Tab:AddButton({
