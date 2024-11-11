@@ -864,13 +864,6 @@ local Section = Tab:AddSection({
 	Name = "Public Bathroom Simulator: Extra (Project L)(annoy players)"
 })
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Public-Bathroom-Simulator-Project-L-9337"))(); Notification("Public Bathroom Simulator: extra (Project L)(Annoy Players")
-      		print("botão pressionado")
-  	end    
-})
-
 
 local Tab = Window:MakeTab({
 	Name = "UGC (Auto Farm)",
