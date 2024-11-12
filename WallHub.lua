@@ -416,6 +416,17 @@ Tab:AddButton({
   	end    
 })
 
+local Section = Tab:AddSection({
+	Name = "Comer Chapeus(FE)(???)"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/7LpVW1ZV"))(); Notification("Comer Chapeus (???)")
+      		print("botão pressionado")
+  	end    
+})
+
 
 local Tab = Window:MakeTab({
 	Name = "Player",
