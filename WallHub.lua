@@ -1265,7 +1265,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("Por algum motivo não gosta do seu executor?","é só executar algum remake do seu executor favorito e pronto")
+Tab:AddParagraph("Por algum motivo não gosta do seu executor?","tem alguns aí kkjjjk")
 
 local Section = Tab:AddSection({
 	Name = "Synapse X"
@@ -1288,6 +1288,18 @@ Tab:AddButton({
       		print("botão pressionado")
   	end    
 })
+
+local Section = Tab:AddSection({
+	Name = "ECCS"
+})
+
+Tab:AddButton({
+	Name = "Executar",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/ECCSco/ECCS-V3/refs/heads/main/ECCS%20Searcher%20V2.7.lua")); Notification("ECCS")
+      		print("botão pressionado")
+  	end    
+})
+
 
 
 local Tab = Window:MakeTab({
