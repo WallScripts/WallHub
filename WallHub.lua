@@ -1279,7 +1279,7 @@ local Tab = Window:MakeTab({
 Tab:AddParagraph("Por algum motivo não gosta do seu executor?","tem alguns aí kkjjjk")
 
 local Section = Tab:AddSection({
-	Name = "Synapse X"
+	Name = "Synapse X [PE Delta]"
 })
 
 Tab:AddButton({
