@@ -2,5 +2,11 @@ local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Wal
 local Window = OrionLib:MakeWindow({IntroText = "Wall Hub", IntroIcon = "rbxassetid://8834748103",Name = ("Wall Hub 1.3 | By Wall Scripts".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, InEnabled = true, ConfigFolder = "Wall Hub"})
 
 local HomeTab = Window:MakeTab({ Name = "Home", Icon = "rbxassetid://7733960981", })
-
-
+local PlayerTab = Window:MakeTab({ Name = "Player", Icon = "rbxassetid://7733771472", })
+local EspAimbotTab = Window:MakeTab({ Name = "Esp+Aimbot", Icon = "rbxassetid://7733774602", })
+local TrollarDiversaoTab = Window:MakeTab({ Name = "Trollar/Diversão", Icon = "rbxassetid://7734059095", })
+local GraficosTab = Window:MakeTab({ Name = "Gráficos", Icon = "rbxassetid://7743874674", })
+local PoraoTab = Window:MakeTab({ Name = "Porão", Icon = "rbxassetid://7743869054", })
+local ServerTab = Window:MakeTab({ Name = "Server", Icon = "rbxassetid://7733954760", })
+local AtuTab = Window:MakeTab({ Name = "Atualizações", Icon = "rbxassetid://7743878358", })
+local infoTab = Window:MakeTab({ Name = "Info+", Icon = "rbxassetid://7733911828", })
