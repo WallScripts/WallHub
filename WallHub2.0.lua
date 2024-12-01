@@ -2,7 +2,6 @@ local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Wal
 local Window = OrionLib:MakeWindow({IntroText = "Wall Hub(beta)", IntroIcon = "rbxassetid://8834748103",Name = ("Wall Hub 1.3 | By Wall Scripts".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, InEnabled = true, ConfigFolder = "Wall Hub"})
 
 local HomeTab = Window:MakeTab({ 
-    Name = "Home", Icon = "rbxassetid://7733960981",
-  })
+    Name = "Home", Icon = "rbxassetid://7733960981", })
 
 
