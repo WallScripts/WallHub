@@ -1,4 +1,4 @@
---No WallHub2.0 eu vou refazer todas as coisas só que otimizado👍
+--No WallHub2.0 eu vou refazer todas as coisas só que otimizado, e bem estruturado.
 
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/WallScripts/OrionLibraryV3/refs/heads/main/WallHub")))()
 local Window = OrionLib:MakeWindow({IntroText = "Wall Hub2.0", IntroIcon = "rbxassetid://8834748103",Name = ("Wall Hub 1.3 | By Wall Scripts".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, InEnabled = true, ConfigFolder = "Wall Hub"})
@@ -13,7 +13,7 @@ local ServerTab = Window:MakeTab({ Name = "Server", Icon = "rbxassetid://7733954
 local AtuTab = Window:MakeTab({ Name = "Atualizações", Icon = "rbxassetid://7743878358", })
 local infoTab = Window:MakeTab({ Name = "Info+", Icon = "rbxassetid://7733911828", })
 
-Home:AddSection({ Name = "???" })
+HomeTab:AddSection({ Name = "???" })
 HomeTab:AddButton({ Name = "???", Callback = function() end })
 
 HomeTab:AddSection({ Name = "FlyGui (minha versão)" })
