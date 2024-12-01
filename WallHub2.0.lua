@@ -13,21 +13,11 @@ local ServerTab = Window:MakeTab({ Name = "Server", Icon = "rbxassetid://7733954
 local AtuTab = Window:MakeTab({ Name = "Atualizações", Icon = "rbxassetid://7743878358", })
 local infoTab = Window:MakeTab({ Name = "Info+", Icon = "rbxassetid://7733911828", })
 
-local Section = Home:AddSection({ Name = "???" })
+Home:AddSection({ Name = "???" })
+HomeTab:AddButton({ Name = "???", Callback = function() end })
 
-Tab:AddButton({ Name = "???", Callback = function() end })
-
-
-local Section = Tab:AddSection({
-	Name = "FlyGui (minha versão)"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/FlyGui/refs/heads/main/V1"))(); Notification("Fly GUI")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "FlyGui (minha versão)" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/FlyGui/refs/heads/main/V1"))(); Notification("Fly GUI"); print("botão pressionado") end })
 
 local Section = Tab:AddSection({
 	Name = "Jump and Speed Modifier"
