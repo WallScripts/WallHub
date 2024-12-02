@@ -45,7 +45,7 @@ HomeTab:AddSection({ Name = "Espectar" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/daM0ut53"))(); Notification("Espectar"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Esp" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-ESP-6338"))(); Notification("Esp"); print("botão pressionado") end })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Esp"))(); Notification("Esp"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Safe Spot" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/k6wxsefJ"))(); Notification("Safe Spot"); print("botão pressionado") end })
