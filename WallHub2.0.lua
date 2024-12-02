@@ -177,7 +177,7 @@ local jpowerslider = PlayerTab:AddSlider({ Name = "JumpPower", Min = 0, Max = 40
     end    
 })
 
-Tab:AddButton({ Name = "Resetar Jumppower", Callback = function()jpowerslider:Set(50); print("Jpower Resetada") end })
+PlayerTab:AddButton({ Name = "Resetar Jumppower", Callback = function()jpowerslider:Set(50); print("Jpower Resetada") end })
 
 
 local gravslider = PlayerTab:AddSlider({ Name = "Gravidade", Min = 0, Max = 1000, Default = 196.2, Color = Color3.fromRGB(0, 0, 255), Increment = 1, ValueName = "", Callback = function(value); game.Workspace.Gravity = value end })
