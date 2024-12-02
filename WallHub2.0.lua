@@ -186,7 +186,7 @@ PlayerTab:AddDropdown({ Name = "Gravidade (bônus)", Default = "9.81", Options =
     Callback = function(Value)
         local gravidade = tonumber(Value:match("%((%-?%d+%.?%d*)"))
         if gravidade then
-        local gravidadeRoblox = gravidade * (196.2 / 9.81)
+        local gravidadeR = gravidade * (196.2 / 9.81)
         game.Workspace.Gravity = gravidadeR
         end
     end
