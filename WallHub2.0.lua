@@ -180,7 +180,8 @@ local jpowerslider = PlayerTab:AddSlider({ Name = "JumpPower", Min = 0, Max = 40
 PlayerTab:AddButton({ Name = "Resetar Jumppower", Callback = function()jpowerslider:Set(50); print("Jpower Resetada") end })
 
 
-local gravslider = PlayerTab:AddSlider({ Name = "Gravidade", Min = 0, Max = 1000, Default = 196.2, Color = Color3.fromRGB(0, 0, 255), Increment = 1, ValueName = "", Callback = function(value); game.Workspace.Gravity = value end })
+local gravslider = PlayerTab:AddSlider({ Name = "Gravidade", Min = 0, Max = 1000, Default = 196.2, Color = Color3.fromRGB(0, 0, 255), Increment = 1, ValueName = "", Callback = function(value)
+	game.Workspace.Gravity = value end })
 
 PlayerTab:AddDropdown({ Name = "Gravidade (bônus)", Default = "9.81", Options = { "Mercúrio (3.7 m/s²)", "Vênus (8.87 m/s²)", "Terra (9.81 m/s²)", "Marte (3.71 m/s²)", "Júpiter (24.79 m/s²)", "Saturno (10.44 m/s²)", "Urano (8.69 m/s²)", "Netuno (11.15 m/s²)", "Plutão (0.62 m/s²)",  "Ceres (0.27 m/s²)",  "Haumea (0.44 m/s²)", "Makemake (0.47 m/s²)", "Eris (0.82 m/s²)", "Sol (274 m/s²)" },
     Callback = function(Value)
