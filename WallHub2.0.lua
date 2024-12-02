@@ -69,7 +69,9 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 HomeTab:AddSection({ Name = "Nameless Admin" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))(); Notification("Nameless Admin") print("botão pressionado") end })
 
-local Section = Tab:AddSection({
+--Vou Refazer Depois
+
+--[[ local Section = Tab:AddSection({
 	Name = "Telekinesis"
 })
 
