@@ -96,7 +96,7 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 
 
 HomeTab:AddSection({ Name = "Sirius Hub" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sirius-7420"))(); Notification("SiriusHub"); print("botão pressionado") end })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://sirius.menu/script"))(); Notification("SiriusHub"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Orca" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))(); Notification("Orca"); print("botão pressionado") end })
