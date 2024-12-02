@@ -252,7 +252,7 @@ PlayerTab:AddTextbox({ Name = "Gravidade(Normal 192.6)", Default = "192.6",  Tex
 PlayerTab:AddButton({ Name = "Resetar Gravidade(slider)", Callback = function()gravslider:Set(196.2) print("Gravidade resetada") end })
 
 
-local Section = Tab:AddSection({ Name = " " })
+PlayerTab:AddSection({ Name = " " })
 local infiniteJumpEnabled = false
 
 local player = game.Players.LocalPlayer
@@ -280,7 +280,7 @@ end
 
 player.CharacterAdded:Connect(onCharacterAdded)
 
-Tab:AddToggle({ Name = "inf jump", Default = false, Callback = toggleInfiniteJump })
+PlayerTab:AddToggle({ Name = "inf jump", Default = false, Callback = toggleInfiniteJump })
 
 
 
