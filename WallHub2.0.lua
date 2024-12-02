@@ -89,7 +89,7 @@ HomeTab:AddSection({ Name = "Animations" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))(); Notification("Animations(r6)"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Dex" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Keyless-mobile-dex-17888"))(); Notification("Dex"); print("botão pressionado") end })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Dex"))(); Notification("Dex"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Game Prober" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-GameProber-17244"))(); Notification("Game Prober"); print("botão pressionado") end })
