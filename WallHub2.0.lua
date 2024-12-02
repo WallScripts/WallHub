@@ -3,6 +3,7 @@
 
 
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/WallScripts/OrionLibraryV3/refs/heads/main/WallHub")))()
+print(OrionLib)
 local Window = OrionLib:MakeWindow({IntroText = "Wall Hub2.0", IntroIcon = "rbxassetid://8834748103",Name = ("Wall Hub 1.3 | By Wall Scripts".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, InEnabled = true, ConfigFolder = "Wall Hub"})
 
 --notificação 
@@ -141,9 +142,12 @@ HomeTab:AddSection({ Name = "Keyboard Script(Delta Keyboard)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))(); Notification("Keyboard Script (Delta Keyboard)"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Armazenar Texto(Vai armazenar mensagens no console)" })
-HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappear = false, Callback = function(value); print("Você digitou: " .. value) end })
-HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappear = false, Callback = function(value); print("Você digitou: " .. value) end })
-HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappear = false, Callback = function(value); print("Você digitou: " .. value) end })
+HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappear = false, Callback = function(value)
+      print("Você digitou: " .. value) end })
+HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappear = false, Callback = function(value)
+      print("Você digitou: " .. value) end })
+HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappear = false, Callback = function(value)
+      print("Você digitou: " .. value) end })
 
 HomeTab:AddParagraph("Aleatoriedade","Depois daqui só tem coisa aleatória")
 
