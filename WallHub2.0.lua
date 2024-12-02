@@ -105,7 +105,7 @@ HomeTab:AddSection({ Name = "Simple Spy" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))(); Notification("Simple Spy"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Chat Spy(permite ver chats privados)" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Chat-spy-20280"))(); NotificationOn("Chat Spy"); print("botão pressionado") end })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/ChatSpy"))(); NotificationOn("Chat Spy"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Console" })
 HomeTab:AddButton({
