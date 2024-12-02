@@ -250,6 +250,7 @@ PlayerTab:AddTextbox({ Name = "Gravidade(Normal 192.6)", Default = "192.6",  Tex
 })
 
 PlayerTab:AddButton({ Name = "Resetar Gravidade(slider)", Callback = function()gravslider:Set(196.2) print("Gravidade resetada") end })
+
 PlayerTab:AddSection({ Name = "  " })
 local infiniteJumpEnabled = false
 
