@@ -7,9 +7,21 @@ local Window = OrionLib:MakeWindow({IntroText = "Wall Hub2.0", IntroIcon = "rbxa
 
 --notificação 
 
-local function Notification(NomeScript) 
-      OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "O " .. NomeScript.. " foi executado", Image = "rbxassetid://7733911828", Time = 5 })
+local function Notification(ScriptName) 
+      OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "O " .. ScriptName .. " foi executado", Image = "rbxassetid://7733911828", Time = 5 })
 end
+
+--notificaçãoOn
+local function NotificationOn(ScriptName)
+      OrionLib:MakeNotification({ Name = "Wall Hub System", Content = " ".. ScriptName .. " Ativado", Image = "rbxassetid://7733911828", Time = 5 })
+end
+
+--notificaçãoOff
+local function NotificationOff(ScriptName)
+      OrionLib:MakeNotification({ Name = "Wall Hub System", Content = " ".. ScriptName .. " Desativado", Image = "rbxassetid://7733911828", Time = 5 })
+end
+
+--Tabs
 
 local HomeTab = Window:MakeTab({ Name = "Home", Icon = "rbxassetid://7733960981", })
 local PlayerTab = Window:MakeTab({ Name = "Player", Icon = "rbxassetid://7733771472", })
