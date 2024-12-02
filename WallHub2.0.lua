@@ -302,7 +302,7 @@ end
      child.CanCollide = true
  end
 end
- NotificationOff("Noclip")
+if not value then NotificationOff("Noclip")
 else            
      Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
  NotificationOn("Noclip") end end })
