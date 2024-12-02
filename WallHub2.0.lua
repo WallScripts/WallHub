@@ -28,107 +28,46 @@ HomeTab:AddSection({ Name = "FlyGui (É só uma versão modificad)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/FlyGUI"))(); Notification("Fly GUI"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Espectar" })
-
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/daM0ut53"))(); Notification("Espectar"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Esp" })
-Tab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-ESP-6338"))(); Notification("Esp"); print("botão pressionado") end })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-ESP-6338"))(); Notification("Esp"); print("botão pressionado") end })
 
-local Section = Tab:AddSection({
-	Name = "Safe Spot"
-})
+HomeTab:AddSection({ Name = "Safe Spot" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/k6wxsefJ"))(); Notification("Safe Spot"); print("botão pressionado") end })
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/k6wxsefJ"))(); Notification("Safe Spot")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "Teleport Tool" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/iek04s0j"))(); Notification("Tp Tool") print("botão pressionado") end })
 
-local Section = Tab:AddSection({
-	Name = "Teleport Tool"
-})
+HomeTab:AddSection({ Name = "Noclip Tool" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/DEBmKDhK"))(); Notification("Noclip Tool"); print("botão pressionado") end })
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/iek04s0j"))(); Notification("Tp Tool")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "Invisible Tool" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/mJj40Mzn"))(); Notification("Invisible Tool") print("botão pressionado") end })
 
-local Section = Tab:AddSection({
-	Name = "Noclip Tool"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/DEBmKDhK"))(); Notification("Noclip Tool")
-      		print("botão pressionado")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Invisible Tool"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/mJj40Mzn"))(); Notification("Invisible Tool")
-      		print("botão pressionado")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Drop Tools(Dropa todos os itens do seu inventário)"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()
-      		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
-   if v:IsA("Tool")  then
+HomeTab:AddSection({ Name = "Drop Tools(Dropa todos os itens do seu inventário)" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+    if v:IsA("Tool")  then
     wait(0.1)
     v.Parent = game.Players.LocalPlayer.Character
     wait(0.1)
     v.Parent = game.Workspace
-Notification("Drop Tools")
 end
 end
-  	end    
+end    
 })
 
-local Section = Tab:AddSection({
-	Name = "Shift Lock"
-})
+--Desisto de botar os ;
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/TZ7H0Jdx"))(); Notification("Shift Lock")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "Shift Lock" }) 
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/TZ7H0Jdx"))(); Notification("Shift Lock") print("botão pressionado") end })
 
-local Section = Tab:AddSection({
-	Name = "Infinite Yield"
-})
+HomeTab:AddSection({ Name = "Infinite Yield" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))(); Notification("Infinite Yield") print("botão pressionado") end })
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))(); Notification("Infinite Yield")
-      		print("botão pressionado")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Nameless Admin"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))(); Notification("Nameless Admin")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "Nameless Admin" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))(); Notification("Nameless Admin") print("botão pressionado") end })
 
 local Section = Tab:AddSection({
 	Name = "Telekinesis"
