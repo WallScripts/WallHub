@@ -252,8 +252,8 @@ PlayerTab:AddTextbox({ Name = "Gravidade(Normal 192.6)", Default = "192.6",  Tex
 PlayerTab:AddButton({ Name = "Resetar Gravidade(slider)", Callback = function()gravslider:Set(196.2) print("Gravidade resetada") end })
 
 PlayerTab:AddSection({ Name = "  " })
+----------------------------------------------------------
 local infiniteJumpEnabled = false
-
 local player = game.Players.LocalPlayer
 local userInputService = game:GetService("UserInputService")
 local character = player.Character or player.CharacterAdded:Wait()
@@ -278,10 +278,40 @@ local function onCharacterAdded(newCharacter)
 end
 
 player.CharacterAdded:Connect(onCharacterAdded)
-
+----------------------------------------------------------
 PlayerTab:AddToggle({ Name = "inf jump", Default = false, Callback = toggleInfiniteJump })
+----------------------------------------------------------
+local Clip = true  
+local Noclipping  
+local function NoclipLoop()
+     if not Clip and game.Players.LocalPlayer.Character then
+     for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+     if child:IsA("BasePart") and child.CanCollide == true then
+     child.CanCollide = false
+     end
+     end
+     end
+end
 
+----------------------------------------------------------
+Tab:AddToggle({ Name = "Noclip", Default = false, Callback = function(value)
+----------------------------------------------------------
+      Clip = not value  
+      if Clip then            
+      if Noclipping then
+      Noclipping:Disconnect()
+end
+     for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+     if child:IsA("BasePart") then
+     child.CanCollide = true
+ end
+end
+ NotificationOff("Noclip")
+else            
+     Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
+ NotificationOn("Noclip") end end })
 
+----------------------------------------------------------
 
 --Acabou
 
