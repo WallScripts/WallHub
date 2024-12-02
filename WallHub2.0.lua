@@ -251,6 +251,39 @@ PlayerTab:AddTextbox({ Name = "Gravidade(Normal 192.6)", Default = "192.6",  Tex
 
 PlayerTab:AddButton({ Name = "Resetar Gravidade(slider)", Callback = function()gravslider:Set(196.2) print("Gravidade resetada") end })
 
+
+local Section = Tab:AddSection({ Name = " " })
+local infiniteJumpEnabled = false
+
+local player = game.Players.LocalPlayer
+local userInputService = game:GetService("UserInputService")
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+local function onJumpRequest()
+    if infiniteJumpEnabled then
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    end
+end
+
+userInputService.JumpRequest:Connect(onJumpRequest)
+
+local function toggleInfiniteJump(value)
+    infiniteJumpEnabled = value
+end
+
+local function onCharacterAdded(newCharacter)
+    character = newCharacter
+    humanoid = character:WaitForChild("Humanoid")
+    userInputService.JumpRequest:Connect(onJumpRequest)
+end
+
+player.CharacterAdded:Connect(onCharacterAdded)
+
+Tab:AddToggle({ Name = "inf jump", Default = false, Callback = toggleInfiniteJump })
+
+
+
 --Acabou
 
 OrionLib:Init()
