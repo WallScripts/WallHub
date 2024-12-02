@@ -53,8 +53,8 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 HomeTab:AddSection({ Name = "Noclip Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Noclip"))(); Notification("Noclip Tool"); print("botão pressionado") end })
 
-HomeTab:AddSection({ Name = "Invisible Tool" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/mJj40Mzn"))(); Notification("Invisible Tool"); print("botão pressionado") end })
+HomeTab:AddSection({ Name = "Invis Tool" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Invis"))(); Notification("Invisible Tool"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Drop Tools(Dropa todos os itens do seu inventário)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()
