@@ -69,128 +69,44 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 HomeTab:AddSection({ Name = "Nameless Admin" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))(); Notification("Nameless Admin"); print("botão pressionado") end })
 
---Vou Refazer Depois
 
---[[ local Section = Tab:AddSection({
-	Name = "Telekinesis"
-})
+HomeTab:AddSection({ Name = "Telekinesis" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-Telekinesis-V5-21542"))(); Notification("Telekinesis"); print("botão pressionado") end })
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-Telekinesis-V5-21542"))(); Notification("Telekinesis")
-      		print("botão pressionado")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Black Hole"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-black-hole-19267"))(); Notification("Black Hole")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "Black Hole" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-black-hole-19267"))(); Notification("Black Hole"); print("botão pressionado") end })
 
 
-local Section = Tab:AddSection({
-	Name = "Animations (r15)"
-})
+HomeTab:AddSection({ Name = "Animations (r15)" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))(); Notification("Animations(r16)"); print("botão pressionado") end })
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))(); Notification("Animations(r16)")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "Animations (r6)" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))(); Notification("Animations(r6)"); print("botão pressionado") end })
 
-local Section = Tab:AddSection({
-	Name = "Animations (r6)"
-})
+HomeTab:AddSection({ Name = "Dex" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Keyless-mobile-dex-17888"))(); Notification("Dex"); print("botão pressionado") end })
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))(); Notification("Animations(r6)")
-      		print("botão pressionado")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Dex"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Keyless-mobile-dex-17888"))(); Notification("Dex")
-      		print("botão pressionado")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Game Prober"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-GameProber-17244"))(); Notification("Game Prober")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "Game Prober" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-GameProber-17244"))(); Notification("Game Prober"); print("botão pressionado") end })
 
 
-local Section = Tab:AddSection({
-	Name = "Sirius Hub"
-})
+HomeTab:AddSection({ Name = "Sirius Hub" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sirius-7420"))(); Notification("SiriusHub"); print("botão pressionado") end })
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sirius-7420"))(); Notification("SiriusHub")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "Orca" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))(); Notification("Orca"); print("botão pressionado") end })
 
-local Section = Tab:AddSection({
-	Name = "Orca"
-})
+HomeTab:AddSection({ Name = "Simple Spy" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))(); Notification("Simple Spy"); print("botão pressionado") end })
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))(); Notification("Orca")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "Chat Spy(permite ver chats privados)" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Chat-spy-20280"))(); NotificationOn("Chat Spy"); print("botão pressionado") end })
 
-local Section = Tab:AddSection({
-	Name = "Simple Spy"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))(); Notification("Simple Spy")
-      		print("botão pressionado")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Chat Spy(permite ver chats privados)"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Chat-spy-20280"))(); NotificationOn("Chat Spy")
-      		print("botão pressionado")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Console"
-})
-
-Tab:AddButton({
+HomeTab:AddSection({ Name = "Console" })
+HomeTab:AddButton({
 	Name = "Executar(Vai aparecer um botão no canto superior esquerdo)",
 	Callback = function()
-      		local Console = Instance.new("ScreenGui")
+        local Console = Instance.new("ScreenGui")
 Console.Name = 'Console'
 Console.Parent = game.CoreGui
 
@@ -216,68 +132,18 @@ Notification("Console")
   	end    
 })
 
-local Section = Tab:AddSection({
-	Name = "Keyboard Script(Delta Keyboard)"
-})
+HomeTab:AddSection({ Name = "Keyboard Script(Delta Keyboard)" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))(); Notification("Keyboard Script (Delta Keyboard)"); print("botão pressionado") end })
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))(); Notification("Keyboard Script (Delta Keyboard)")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "Armazenar Texto(Vai armazenar mensagens no console)" })
+HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappear = false, Callback = function(value); print("Você digitou: " .. value) end })
+HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappear = false, Callback = function(value); print("Você digitou: " .. value) end })
+HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappear = false, Callback = function(value); print("Você digitou: " .. value) end })
 
-local Section = Tab:AddSection({
-	Name = "Armazenar Texto(Vai armazenar mensagens no console)"
-})
+HomeTab:AddParagraph("Aleatoriedade","Depois daqui só tem coisa aleatória")
 
- Tab:AddTextbox({
-    Name = "Armazenar",
-    Default = "Digite algo...",
-    TextDisappear = false,
-    Callback = function(value)
-        print("Você digitou: " .. value)
-    end
-})
+HomeTab:AddSection({ Name = "Professor de japonês(???)" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Japanese-Vocabulary-Teacher-19360"))(); Notification("Professor de japonês (???)"); print("botão pressionado") end })
 
-Tab:AddTextbox({
-    Name = "Armazenar",
-    Default = "Digite algo...",
-    TextDisappear = false,
-    Callback = function(value)
-        print("Você digitou: " .. value)
-    end
-})
-
-Tab:AddTextbox({
-    Name = "Armazenar",
-    Default = "Digite algo...",
-    TextDisappear = false,
-    Callback = function(value)
-        print("Você digitou: " .. value)
-    end
-})
-
-Tab:AddParagraph("Aleatoriedade","Depois daqui só tem coisa aleatória")
-
-local Section = Tab:AddSection({
-	Name = "Professor de japonês(???)"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Japanese-Vocabulary-Teacher-19360"))(); Notification("Professor de japonês (???)")
-      		print("botão pressionado")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Comer Chapeus(FE)(???)"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/7LpVW1ZV"))(); Notification("Comer Chapeus (???)")
-      		print("botão pressionado")
-  	end    
-}) ]]
+HomeTab:AddSection({ Name = "Comer Chapeus(???)" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/7LpVW1ZV"))(); Notification("Comer Chapeus (???)"); print("botão pressionado") end })
