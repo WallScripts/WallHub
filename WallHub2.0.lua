@@ -152,3 +152,7 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 
 HomeTab:AddSection({ Name = "Comer Chapeus(???)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/7LpVW1ZV"))(); Notification("Comer Chapeus (???)"); print("botão pressionado") end })
+
+--Acabou
+
+OrionLib:Init()
