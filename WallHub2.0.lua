@@ -27,38 +27,12 @@ HomeTab:AddButton({ Name = "???", Callback = function() end })
 HomeTab:AddSection({ Name = "FlyGui (É só uma versão modificad)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/FlyGUI"))(); Notification("Fly GUI"); print("botão pressionado") end })
 
-local Section = Tab:AddSection({
-	Name = "Jump and Speed Modifier"
-})
+HomeTab:AddSection({ Name = "Espectar" })
 
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/PUdkcyUP"))(); Notification("Jump And Speed Modifier")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/daM0ut53"))(); Notification("Espectar"); print("botão pressionado") end })
 
-local Section = Tab:AddSection({
-	Name = "Espectar"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/daM0ut53"))(); Notification("Espectar")
-      		print("botão pressionado")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Esp"
-})
-
-Tab:AddButton({
-	Name = "Executar",
-	Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-ESP-6338"))(); Notification("Esp")
-      		print("botão pressionado")
-  	end    
-})
+HomeTab:AddSection({ Name = "Esp" })
+Tab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-ESP-6338"))(); Notification("Esp"); print("botão pressionado") end })
 
 local Section = Tab:AddSection({
 	Name = "Safe Spot"
