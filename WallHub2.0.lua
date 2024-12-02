@@ -6,8 +6,7 @@
 --notificação 
 
 local function Notification(NomeScript) 
-OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "O " .. NomeScript.. " foi executado", Image = "rbxassetid://7733911828", Time = 5
-   })
+      OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "O " .. NomeScript.. " foi executado", Image = "rbxassetid://7733911828", Time = 5 })
 end
 
 
