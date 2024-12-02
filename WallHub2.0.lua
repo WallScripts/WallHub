@@ -280,4 +280,4 @@ Tab:AddButton({
 	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/7LpVW1ZV"))(); Notification("Comer Chapeus (???)")
       		print("botão pressionado")
   	end    
-})
+}) ]]
