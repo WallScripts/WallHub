@@ -21,6 +21,8 @@ local ServerTab = Window:MakeTab({ Name = "Server", Icon = "rbxassetid://7733954
 local AtuTab = Window:MakeTab({ Name = "Atualizações", Icon = "rbxassetid://7743878358", })
 local infoTab = Window:MakeTab({ Name = "Info+", Icon = "rbxassetid://7733911828", })
 
+--HomeTab
+
 HomeTab:AddSection({ Name = "???" })
 HomeTab:AddButton({ Name = "???", Callback = function() end })
 
@@ -57,8 +59,6 @@ end
 end
 end    
 })
-
---Desisto de botar os ;
 
 HomeTab:AddSection({ Name = "Shift Lock" }) 
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/TZ7H0Jdx"))(); Notification("Shift Lock") print("botão pressionado") end })
