@@ -148,7 +148,7 @@ HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappe
 HomeTab:AddParagraph("Aleatoriedade","Depois daqui só tem coisa aleatória")
 
 HomeTab:AddSection({ Name = "Professor de japonês(???)" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Japanese-Vocabulary-Teacher-19360"))(); Notification("Professor de japonês (???)"); print("botão pressionado") end })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Vocab"))(); Notification("Professor de japonês (???)"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Comer Chapeus(???)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/7LpVW1ZV"))(); Notification("Comer Chapeus (???)"); print("botão pressionado") end })
