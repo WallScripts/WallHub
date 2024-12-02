@@ -70,7 +70,7 @@ end
 })
 
 HomeTab:AddSection({ Name = "Shift Lock" }) 
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/TZ7H0Jdx"))(); Notification("Shift Lock"); print("botão pressionado") end })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/ShiftlockPerm"))(); Notification("Shift Lock"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Infinite Yield" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))(); Notification("Infinite Yield"); print("botão pressionado") end })
