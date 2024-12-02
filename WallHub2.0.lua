@@ -38,27 +38,28 @@ local infoTab = Window:MakeTab({ Name = "Info+", Icon = "rbxassetid://7733911828
 
 HomeTab:AddSection({ Name = "???" })
 HomeTab:AddButton({ Name = "???", Callback = function() end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "FlyGui (É só uma versão modificad)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/FlyGUI"))(); Notification("Fly GUI"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Espectar" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/daM0ut53"))(); Notification("Espectar"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Esp" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Esp"))(); Notification("Esp"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Teleport Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Tptool"))(); Notification("Tp Tool"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Noclip Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Noclip"))(); Notification("Noclip Tool"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Invis Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Invis"))(); Notification("Invisible Tool"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Drop Tools(Dropa todos os itens do seu inventário)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()
+---------------------------------------------------------------------------
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
     if v:IsA("Tool")  then
     wait(0.1)
@@ -69,50 +70,47 @@ end
 end
 end    
 })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Shift Lock" }) 
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/ShiftlockPerm"))(); Notification("Shift Lock"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Infinite Yield" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))(); Notification("Infinite Yield"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Nameless Admin" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))(); Notification("Nameless Admin"); print("botão pressionado") end })
-
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Telekinesis" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Telekinesis"))(); Notification("Telekinesis"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Black Hole" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BringFlingPlayers")); Notification("Black Hole"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Animations" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))(); Notification("Animations(r6)"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Dex" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Dex"))(); Notification("Dex"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Game Prober" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/gameprober-lua/main/gp.lua"))(); Notification("Game Prober"); print("botão pressionado") end })
-
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Sirius Hub" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://sirius.menu/script"))(); Notification("SiriusHub"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Orca" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))(); Notification("Orca"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Simple Spy" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))(); Notification("Simple Spy"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Chat Spy(permite ver chats privados)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/ChatSpy"))(); NotificationOn("Chat Spy"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Console" })
-HomeTab:AddButton({
-	Name = "Executar(Vai aparecer um botão no canto superior esquerdo)",
-	Callback = function()
-        local Console = Instance.new("ScreenGui")
+HomeTab:AddButton({ Name = "Executar(Vai aparecer um botão no canto superior esquerdo)", Callback = function()
+----------------------------------------------------------
+local Console = Instance.new("ScreenGui")
 Console.Name = 'Console'
 Console.Parent = game.CoreGui
 
@@ -126,21 +124,19 @@ button.TextColor3 = Color3.fromRGB(200, 200, 200)
 button.Parent = Console
 button.Font = 'Code'
 button.TextSize = 12
-
 local buttonCorner = Instance.new("UICorner")
 buttonCorner.CornerRadius = UDim.new(0, 8)
 buttonCorner.Parent = button
-
 button.MouseButton1Click:Connect(function()
     game:GetService("VirtualInputManager"):SendKeyEvent(true, "F9" , false , game)
 end)
 Notification("Console")
   	end    
 })
-
+----------------------------------------------------------
 HomeTab:AddSection({ Name = "Keyboard Script(Delta Keyboard)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))(); Notification("Keyboard Script (Delta Keyboard)"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Armazenar Texto(Vai armazenar mensagens no console)" })
 HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappear = false, Callback = function(value)
        print("Você digitou: " .. value) end })
@@ -148,19 +144,19 @@ HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappe
        print("Você digitou: " .. value) end })
 HomeTab:AddTextbox({ Name = "Armazenar", Default = "Digite algo...", TextDisappear = false, Callback = function(value)
        print("Você digitou: " .. value) end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddParagraph("Aleatoriedade","Depois daqui só tem coisa aleatória")
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Professor de japonês(???)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Vocab"))(); Notification("Professor de japonês (???)"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Comer Chapeus(???)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/7LpVW1ZV"))(); Notification("Comer Chapeus (???)"); print("botão pressionado") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --PlayerTab
 
 local ClockLabel = PlayerTab:AddLabel("Time: Loading...")
-
+----------------------------------------------------------
 local function FormatTime()
     local currentTime = os.date("*t")
     local hour = currentTime.hour
@@ -207,6 +203,7 @@ local function UpdateClock()
 end
 spawn(UpdateClock)
 
+----------------------------------------------------------
 local SpeedSlider = PlayerTab:AddSlider({ Name = "WalkSpeed", Min = 0, Max = 400, Default = 16, Color = Color3.fromRGB(0, 255, 0), Increment = 1, ValueName = "", Callback = function(value)
         local player = game.Players.LocalPlayer
         local character = player.Character or player.CharacterAdded:Wait()
@@ -214,7 +211,7 @@ local SpeedSlider = PlayerTab:AddSlider({ Name = "WalkSpeed", Min = 0, Max = 400
         humanoid.WalkSpeed = value        
     end    
 })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PlayerTab:AddButton({ Name = "Resetar Velocidade", Callback = function()SpeedSlider:Set(16); print("Velocidade resetada") end })
 
 local jpowerslider = PlayerTab:AddSlider({ Name = "JumpPower", Min = 0, Max = 400, Default = 50, Color = Color3.fromRGB(255, 0, 0), Increment = 1, ValueName = "", Callback = function(value)
@@ -224,13 +221,13 @@ local jpowerslider = PlayerTab:AddSlider({ Name = "JumpPower", Min = 0, Max = 40
         humanoid.JumpPower = value        
     end    
 })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PlayerTab:AddButton({ Name = "Resetar Jumppower", Callback = function()jpowerslider:Set(50); print("Jpower Resetada") end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 local gravslider = PlayerTab:AddSlider({ Name = "Gravidade", Min = 0, Max = 1000, Default = 196.2, Color = Color3.fromRGB(0, 0, 255), Increment = 1, ValueName = "", Callback = function(value)
 	game.Workspace.Gravity = value end })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PlayerTab:AddDropdown({ Name = "Gravidade (bônus)", Default = "9.81", Options = { "Mercúrio (3.7 m/s²)", "Vênus (8.87 m/s²)", "Terra (9.81 m/s²)", "Marte (3.71 m/s²)", "Júpiter (24.79 m/s²)", "Saturno (10.44 m/s²)", "Urano (8.69 m/s²)", "Netuno (11.15 m/s²)", "Plutão (0.62 m/s²)",  "Ceres (0.27 m/s²)",  "Haumea (0.44 m/s²)", "Makemake (0.47 m/s²)", "Eris (0.82 m/s²)", "Sol (274 m/s²)" },
     Callback = function(Value)
         local gravidade = tonumber(Value:match("%((%-?%d+%.?%d*)"))
@@ -240,7 +237,7 @@ PlayerTab:AddDropdown({ Name = "Gravidade (bônus)", Default = "9.81", Options =
         end
     end
 })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PlayerTab:AddTextbox({ Name = "Gravidade(Normal 192.6)", Default = "192.6",  TextOnly = false, Callback = function(Value)
 	local gravidade = tonumber(Value)
         if gravidade then
@@ -248,9 +245,9 @@ PlayerTab:AddTextbox({ Name = "Gravidade(Normal 192.6)", Default = "192.6",  Tex
         end
     end
 })
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PlayerTab:AddButton({ Name = "Resetar Gravidade(slider)", Callback = function()gravslider:Set(196.2) print("Gravidade resetada") end })
-
+----------------------------------------------------------
 PlayerTab:AddSection({ Name = "  " })
 ----------------------------------------------------------
 local infiniteJumpEnabled = false
@@ -278,9 +275,9 @@ local function onCharacterAdded(newCharacter)
 end
 
 player.CharacterAdded:Connect(onCharacterAdded)
-----------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PlayerTab:AddToggle({ Name = "inf jump", Default = false, Callback = toggleInfiniteJump })
-----------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 local Clip = true  
 local Noclipping  
 local function NoclipLoop()
@@ -293,9 +290,9 @@ local function NoclipLoop()
      end
 end
 
-----------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Tab:AddToggle({ Name = "Noclip", Default = false, Callback = function(value)
-----------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       Clip = not value  
       if Clip then            
       if Noclipping then
