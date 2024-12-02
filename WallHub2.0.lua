@@ -80,7 +80,7 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 
 
 HomeTab:AddSection({ Name = "Telekinesis" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-Telekinesis-V5-21542"))(); Notification("Telekinesis"); print("botão pressionado") end })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Telekinesis"))(); Notification("Telekinesis"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Black Hole" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-black-hole-19267"))(); Notification("Black Hole"); print("botão pressionado") end })
