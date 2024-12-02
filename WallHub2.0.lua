@@ -85,11 +85,7 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 HomeTab:AddSection({ Name = "Black Hole" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BringFlingPlayers")); Notification("Black Hole"); print("botão pressionado") end })
 
-
-HomeTab:AddSection({ Name = "Animations (r15)" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))(); Notification("Animations(r16)"); print("botão pressionado") end })
-
-HomeTab:AddSection({ Name = "Animations (r6)" })
+HomeTab:AddSection({ Name = "Animations" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))(); Notification("Animations(r6)"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Dex" })
