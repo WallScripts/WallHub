@@ -92,7 +92,7 @@ HomeTab:AddSection({ Name = "Dex" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Dex"))(); Notification("Dex"); print("botão pressionado") end })
 
 HomeTab:AddSection({ Name = "Game Prober" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-GameProber-17244"))(); Notification("Game Prober"); print("botão pressionado") end })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/gameprober-lua/main/gp.lua"))(); Notification("Game Prober"); print("botão pressionado") end })
 
 
 HomeTab:AddSection({ Name = "Sirius Hub" })
