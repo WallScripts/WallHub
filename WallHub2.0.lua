@@ -327,9 +327,9 @@ local playerName = player.Name
 ----------------------------------------------------------
 OrionLib:MakeNotification({
     Name = "Wall Hub System",
-    Content = "Bem-vindo(a)" .. playerName,
+    Content = "Bem-vindo(a) " .. playerName,
     Image = "rbxassetid://7733911828",
-    Time = 5
+    Time = 7
 })
 
 wait()
