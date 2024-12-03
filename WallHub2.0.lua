@@ -1,4 +1,4 @@
---No WallHub2.0 eu vou refazer todas as coisas só que otimizado, e bem estruturado.
+ --No WallHub2.0 eu vou refazer todas as coisas só que otimizado, e bem estruturado.
 
 
 
@@ -302,12 +302,10 @@ end
      child.CanCollide = true
  end
 end
-if not value then NotificationOff("Noclip")
+ NotificationOff("Noclip")
 else            
      Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
- NotificationOn("Noclip") 
- end 
-end })
+ NotificationOn("Noclip") end end })
 
 ----------------------------------------------------------
 
