@@ -14,13 +14,13 @@ end
 
 --notificação personalizada
 
-local function NotificationP(Titulo, Conteudo, Id, Time) 
+--[[local function NotificationP(Titulo, Conteudo, Id, Time) 
         Titulo  = Titulo or "Wall Hub System"
 	Conteudo = Conteudo or "Oque essa notificação vai dizer?"
 	Id = Id or 7733911828
 	Time = Time or 5
 	OrionLib:MakeNotification({ Name = Titulo, Content = Conteudo, Image = "rbxassetid://" .. Id, Time = Time })
-end
+end]]
 
 --notificaçãoOn
 local function NotificationOn(ScriptName)
