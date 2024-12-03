@@ -322,11 +322,11 @@ else
  NotificationOn("Noclip") end end })
 
 ----------------------------------------------------------
-
-    wait(2)
+local function WNotification()
     OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "Bem-vindo(a) " .. game.Players.LocalPlayer.Name, Image = "rbxassetid://7733911828", Time = 5 })
 end
 
+WNotification()
 --Acabou
 
 OrionLib:Init()
