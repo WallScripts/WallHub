@@ -17,7 +17,7 @@ end
 local function NotificationP(Conteudo, Id) 
     OrionLib:MakeNotification({
         Name = "Wall Hub System",
-        Content = ".. Conteudo ..",
+        Content = Conteudo,
         Image = "rbxassetid://" .. Id,
         Time = 5
     })
