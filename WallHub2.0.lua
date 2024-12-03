@@ -308,7 +308,7 @@ else
  NotificationOn("Noclip") end end })
 
 ----------------------------------------------------------
-PlayerTab:AddButton({ Name = "Antibang", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Gaze-Anti-bang-V1-22240"))() Notification("Antibang") end })
+PlayerTab:AddButton({ Name = "Antibang", Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Gaze-Anti-bang-V1-22240"))(); print("botão pressionado") Notification("Antibang") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
 --Acabou
