@@ -283,8 +283,9 @@ local Noclipping
 local function NoclipLoop()
      if not Clip and game.Players.LocalPlayer.Character then
      for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-     if child:IsA("BasePart") and child.CanCollide == true then
+     if child:IsA("BasePart") and child.CanCollide == true then NotificatiOn("Noclip")
      child.CanCollide = false
+     NotificationOff("Noclip")
      end
      end
      end
