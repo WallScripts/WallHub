@@ -19,7 +19,7 @@ local function NotificationP(Titulo, Conteudo, Id, Time)
 	Conteudo = Conteudo or "Oque essa notificação vai dizer?"
 	Id = Id or 7733911828
 	Time = Time or 5
-	OrionLib:MakeNotification({ Name = Titulo, Content = Conteudo, Image = "rbxassetid://" .. Id, Time = Time })
+	OrionLib:MakeNotification({ Name = Titulo, Content = Conteudo, Image = "rbxassetid://" .. Id, Time = Time, })
 end
 
 --notificaçãoOn
@@ -322,6 +322,11 @@ else
  NotificationOn("Noclip") end end })
 
 ----------------------------------------------------------
+
+local function WNotification()
+    wait(2)
+    OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "Bem-vindo(a) " .. game.Players.LocalPlayer.Name, Image = "rbxassetid://7733911828", Time = 5 })
+end
 
 --Acabou
 
