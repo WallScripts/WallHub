@@ -323,7 +323,6 @@ else
 
 ----------------------------------------------------------
 
-local function WNotification()
     wait(2)
     OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "Bem-vindo(a) " .. game.Players.LocalPlayer.Name, Image = "rbxassetid://7733911828", Time = 5 })
 end
