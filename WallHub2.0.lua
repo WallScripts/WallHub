@@ -12,6 +12,16 @@ local function Notification(ScriptName)
       OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "O " .. ScriptName .. " foi executado", Image = "rbxassetid://7733911828", Time = 5 })
 end
 
+--notificação personalizada
+
+local function NotificationP(Conteudo, Id) 
+    OrionLib:MakeNotification({
+        Name = "Wall Hub System",
+        Content = ".. Conteudo ..",
+        Image = "rbxassetid://" .. Id,
+        Time = 5
+    })
+end
 --notificaçãoOn
 local function NotificationOn(ScriptName)
       OrionLib:MakeNotification({ Name = "Wall Hub System", Content = " ".. ScriptName .. " Ativado", Image = "rbxassetid://7733911828", Time = 5 })
