@@ -122,7 +122,11 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Console" })
 HomeTab:AddButton({ Name = "Executar(Vai aparecer um botão no canto superior esquerdo)", Callback = function()
-----------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HomeTab:AddSection({ Name = "Por enquanto ele vão ficar aqui kkjjkl" })			
+HomeTab:AddButton({ Name = "Destroy Wall Hub", Callback = function()OrionLib:Destroy(); print("Wall Hub Destroyed") end })
+HomeTab:AddButton({ Name = "Reset Wall Hub", Callback = function()OrionLib:Destroy(); loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/WallHub.lua"))(); print("Wall Hub reseted") end })
+----------------------------------------------------------			
 local Console = Instance.new("ScreenGui")
 Console.Name = 'Console'
 Console.Parent = game.CoreGui
