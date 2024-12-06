@@ -63,6 +63,9 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 HomeTab:AddSection({ Name = "Invis Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Invis"))(); Notification("Invisible Tool"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HomeTab:AddSection({ Name = "Noclip Tool" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Noclip"))(); Notification("Noclip"); print("botão pressionado") end })
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "X-Ray Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/x-ray"))(); Notification("X-ray"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
