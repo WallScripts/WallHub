@@ -305,7 +305,12 @@ end
 
 local function TeleportToPlayer()
     if not selectedPlayer then
-        OrionLib:MakeNotification({ Name = "Wall Hub System",  Content = "Selecione um player antes de continuar ", Image = "rbxassetid://7733911828", Time = 5 })
+        OrionLib:MakeNotification({
+            Name = "Wall Hub System",
+            Content = "Selecione um player antes de continuar.",
+            Image = "rbxassetid://7733911828",
+            Time = 5
+        })
         return
     end
 
@@ -314,19 +319,50 @@ local function TeleportToPlayer()
 
     if player and player.Character then
         game.Players.LocalPlayer.Character:MoveTo(player.Character.HumanoidRootPart.Position)
-        OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "Teleportado para " .. selectedPlayer, Image = "rbxassetid://7733911828", Time = 5 })
-else
-        OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "Jogador saiu/Não foi encontrado", Image = "rbxassetid://7733911828", Time = 5 })
-end
+        OrionLib:MakeNotification({
+            Name = "Wall Hub System",
+            Content = "Teleportado para " .. selectedPlayer,
+            Image = "rbxassetid://7733911828",
+            Time = 5
+        })
+    else
+        OrionLib:MakeNotification({
+            Name = "Wall Hub Syste",
+            Content = "Jogador saiu/Não foi encontrado",
+            Image = "rbxassetid://7733911828",
+            Time = 5
+        })
+    end
 end
 
-PlayerTab:AddDropdown({ Name = "Selecione um player", Options = {}, Callback = function(selected) selectedPlayer = selected end })
-PlayerTab:AddButton({Name = "Tp", Callback = function() TeleportToPlayer()  end })
+    Dropdown = PlayerTab:AddDropdown({
+    Name = "Selecione um player",
+    Options = {},
+    Callback = function(selected)
+        selectedPlayer = selected
+    end
+})
+
+PlayerTab:AddButton({
+    Name = "Tp",
+    Callback = function()
+        TeleportToPlayer()
+    end
+})
+
 PlayerTab:AddButton({
     Name = "Atualizar lista",
     Callback = function()
         UpdatePlayerList()
-        OrionLib:MakeNotification({ Name = "Atualização", Content = "Lista de players atualizada", Image = "rbxassetid://7733911828", Time = 5 }) end })
+        OrionLib:MakeNotification({
+            Name = "Atualização",
+            Content = "Lista de players atualizada",
+            Image = "rbxassetid://7733911828",
+            Time = 5
+        })
+    end
+})
+
 UpdatePlayerList()
 ----------------------------------------------------------
 local infiniteJumpEnabled = false
