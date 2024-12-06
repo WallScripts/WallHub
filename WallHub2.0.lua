@@ -67,7 +67,7 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 HomeTab:AddSection({ Name = "Invis Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Invis"))(); Notification("Invisible Tool"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-local function X-Ray()
+local function XRay()
 XRayVision = Instance.new("Tool")
 XRayVision.Name = "X-RayTool"
 XRayVision.RequiresHandle = false
@@ -100,7 +100,7 @@ xRayEnabled = not xRayEnabled
 end)
 
 HomeTab:AddSection({ Name = "X-Ray Tool" })
-HomeTab:AddButton({ Name = "Executar", Callback = function() X-Ray(); Notification("X-ray"); print("botão pressionado") end })
+HomeTab:AddButton({ Name = "Executar", Callback = function() XRay(); Notification("X-ray"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Drop Tools(Dropa todos os itens do seu inventário)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()
