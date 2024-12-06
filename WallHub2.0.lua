@@ -314,20 +314,10 @@ local function TeleportToPlayer()
 
     if player and player.Character then
         game.Players.LocalPlayer.Character:MoveTo(player.Character.HumanoidRootPart.Position)
-        OrionLib:MakeNotification({
-            Name = "Wall Hub System",
-            Content = "Teleportado para " .. selectedPlayer,
-            Image = "rbxassetid://7733911828",
-            Time = 5
-        })
-    else
-        OrionLib:MakeNotification({
-            Name = "Wall Hub Syste",
-            Content = "Jogador saiu/Não foi encontrado",
-            Image = "rbxassetid://7733911828",
-            Time = 5
-        })
-    end
+        OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "Teleportado para " .. selectedPlayer, Image = "rbxassetid://7733911828", Time = 5 })
+else
+        OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "Jogador saiu/Não foi encontrado", Image = "rbxassetid://7733911828", Time = 5 })
+end
 end
 
 PlayerTab:AddDropdown({ Name = "Selecione um player", Options = {}, Callback = function(selected) selectedPlayer = selected end })
