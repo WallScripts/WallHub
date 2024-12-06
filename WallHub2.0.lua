@@ -67,6 +67,24 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 HomeTab:AddSection({ Name = "Invis Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Invis"))(); Notification("Invisible Tool"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local function disableXRay()
+for _, Part in pairs(workspace:GetDescendants()) do
+if Part:IsA("BasePart") and not Part:IsDescendantOf(game.Players.LocalPlayer.Character) then
+Part.Transparency = 0
+end
+end
+end
+
+local xRayEnabled = false
+XRayVision.Activated:Connect(function()
+if xRayEnabled then
+disableXRay()
+else
+enableXRay()
+end
+xRayEnabled = not xRayEnabled
+end)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "X-Ray Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/x-ray"))(); Notification("X-ray"); print("botão pressionado") end })
 HomeTab:AddSlider({ Name = "X-RayTool Transparency", 
@@ -75,10 +93,15 @@ HomeTab:AddSlider({ Name = "X-RayTool Transparency",
     Default = 0.5,
     Color = Color3.fromRGB(255, 128, 64),
     Increment = 0.1,
-    ValueName = "X-Trasnparency",
+    ValueName = " ",
     Callback = function(value)
-        Part.Transparency = value
-    end
+        for _, Part in pairs(workspace:GetDescendants()) do
+if Part:IsA("BasePart") and not Part:IsDescendantOf(game.Players.LocalPlayer.Character) then
+Part.Transparency = value
+end
+end
+end
+end
 })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Drop Tools(Dropa todos os itens do seu inventário)" })
