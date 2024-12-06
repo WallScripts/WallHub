@@ -69,6 +69,17 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "X-Ray Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/x-ray"))(); Notification("X-ray"); print("botão pressionado") end })
+HomeTab:AddSlider({ Name = "X-RayTool Transparency", 
+    Min = 0,		
+    Max = 1,
+    Default = 0.5,
+    Color = Color3.fromRGB(255, 128, 64),
+    Increment = 0.1,
+    ValueName = "X-Trasnparency",
+    Callback = function(value)
+        Part.Transparency = value
+    end
+})
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Drop Tools(Dropa todos os itens do seu inventário)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()
