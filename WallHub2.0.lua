@@ -36,7 +36,6 @@ end
 
 local HomeTab = Window:MakeTab({ Name = "Home", Icon = "rbxassetid://7733960981", })
 local PlayerTab = Window:MakeTab({ Name = "Player", Icon = "rbxassetid://7733771472", })
-local EATab = Window:MakeTab({ Name = "Esp+Aimbot", Icon = "rbxassetid://7733774602", })
 local TDTab = Window:MakeTab({ Name = "Trollar/Diversão", Icon = "rbxassetid://7734059095", })
 local GraficosTab = Window:MakeTab({ Name = "Gráficos", Icon = "rbxassetid://7743874674", })
 local PoraoTab = Window:MakeTab({ Name = "Porão", Icon = "rbxassetid://7743869054", })
@@ -341,6 +340,13 @@ else
 local player = game.Players.LocalPlayer
 local playerName = player.Name
 ----------------------------------------------------------
+
+--TDTab
+
+
+
+
+
 OrionLib:MakeNotification({
     Name = "Wall Hub System",
     Content = "Bem-vindo(a) " .. playerName,
