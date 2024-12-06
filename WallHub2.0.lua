@@ -60,6 +60,10 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 HomeTab:AddSection({ Name = "Teleport Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Tptool"))(); Notification("Tp Tool"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HomeTab:AddSection({ Name = "F3x(Btools)(Client)" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)(); Notification("F3x(btools)"); print("botão pressionado") end })
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 HomeTab:AddSection({ Name = "Invis Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Invis"))(); Notification("Invisible Tool"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
