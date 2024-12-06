@@ -226,6 +226,13 @@ end
 spawn(UpdateClock)
 
 ----------------------------------------------------------
+local plr = game.Players.LocalPlayer
+function resetPlr() if plr.Character then plr.Character:BreakJoints()
+end
+end
+
+PlayerTab:AddButton({ Name = "Forçar Reset", Callback = function() resetPlr(); print("botão pressionado") end })
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 local SpeedSlider = PlayerTab:AddSlider({ Name = "WalkSpeed", Min = 0, Max = 400, Default = 16, Color = Color3.fromRGB(0, 255, 0), Increment = 1, ValueName = "", Callback = function(value)
         local player = game.Players.LocalPlayer
         local character = player.Character or player.CharacterAdded:Wait()
