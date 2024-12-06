@@ -340,7 +340,7 @@ local playerName = player.Name
 
 --TDTab
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-TDTab:AddSection({ Name = "Noclip Tool" })
+TDTab:AddSection({ Name = "Wall Walk" })
 TDTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Wall-Walk"))(); Notification("Wall Walk"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
