@@ -9,7 +9,7 @@ local Window = OrionLib:MakeWindow({IntroText = "Wall Hub2.0", IntroIcon = "rbxa
 --notificação 
 
 local function Notification(ScriptName) 
-      OrionLib:MakeNotification({ Name = "Wall Hub System", Content = "O " .. ScriptName .. " foi executado", Image = "rbxassetid://7733911828", Time = 5 })
+      OrionLib:MakeNotification({ Name = "Wall Hub System", Content = ScriptName .. " executado", Image = "rbxassetid://7733911828", Time = 5 })
 end
 
 --notificação personalizada
@@ -24,12 +24,12 @@ end
 
 --notificaçãoOn
 local function NotificationOn(ScriptName)
-      OrionLib:MakeNotification({ Name = "Wall Hub System", Content = " ".. ScriptName .. " Ativado", Image = "rbxassetid://7733911828", Time = 5 })
+      OrionLib:MakeNotification({ Name = "Wall Hub System", Content = ScriptName .. " Ativado", Image = "rbxassetid://7733911828", Time = 5 })
 end
 
 --notificaçãoOff
 local function NotificationOff(ScriptName)
-      OrionLib:MakeNotification({ Name = "Wall Hub System", Content = " ".. ScriptName .. " Desativado", Image = "rbxassetid://7733911828", Time = 5 })
+      OrionLib:MakeNotification({ Name = "Wall Hub System", Content = ScriptName .. " Desativado", Image = "rbxassetid://7733911828", Time = 5 })
 end
 
 --Tabs
@@ -66,6 +66,9 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Invis Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Invis"))(); Notification("Invisible Tool"); print("botão pressionado") end })
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HomeTab:AddSection({ Name = "X-Ray Tool" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/x-ray"))(); Notification("X-ray"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Drop Tools(Dropa todos os itens do seu inventário)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()
