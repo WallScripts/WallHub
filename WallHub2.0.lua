@@ -282,6 +282,11 @@ PlayerTab:AddButton({ Name = "Resetar Gravidade(slider)", Callback = function()g
 ----------------------------------------------------------
 PlayerTab:AddSection({ Name = "  " })
 ----------------------------------------------------------
+local function spawndropdown()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Goto"))()
+end
+spawndropdown()
+----------------------------------------------------------
 local infiniteJumpEnabled = false
 local player = game.Players.LocalPlayer
 local userInputService = game:GetService("UserInputService")
