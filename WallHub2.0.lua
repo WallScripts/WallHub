@@ -48,7 +48,7 @@ local infoTab = Window:MakeTab({ Name = "Info+", Icon = "rbxassetid://7733911828
 HomeTab:AddSection({ Name = "???" })
 HomeTab:AddButton({ Name = "???", Callback = function() end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-HomeTab:AddSection({ Name = "FlyGui (É só uma versão modificad)" })
+HomeTab:AddSection({ Name = "FlyGui v3" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/FlyGUI"))(); Notification("Fly GUI"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Espectar" })
@@ -317,6 +317,9 @@ local function NoclipLoop()
 end
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Player:AddLabel("Noclip não funciona mais :(")
+
+--[[ Noclip quebrou 
 PlayerTab:AddToggle({ Name = "Noclip", Default = false, Callback = function(value)
       Clip = not value  
       if Clip then            
@@ -331,7 +334,7 @@ end
  NotificationOff("Noclip")
 else            
      Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
- NotificationOn("Noclip") end end })
+ NotificationOn("Noclip") end end }) ]]
 
 ----------------------------------------------------------
 local player = game.Players.LocalPlayer
