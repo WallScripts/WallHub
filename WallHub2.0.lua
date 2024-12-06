@@ -67,8 +67,40 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 HomeTab:AddSection({ Name = "Invis Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Invis"))(); Notification("Invisible Tool"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local function X-Ray()
+XRayVision = Instance.new("Tool")
+XRayVision.Name = "X-RayTool"
+XRayVision.RequiresHandle = false
+XRayVision.Parent = game.Players.LocalPlayer.Backpack
+
+local function enableXRay()
+for _, Part in pairs(workspace:GetDescendants()) do
+if Part:IsA("BasePart") and not Part:IsDescendantOf(game.Players.LocalPlayer.Character) then
+Part.Transparency = 0.5
+end
+end
+end
+
+local function disableXRay()
+for _, Part in pairs(workspace:GetDescendants()) do
+if Part:IsA("BasePart") and not Part:IsDescendantOf(game.Players.LocalPlayer.Character) then
+Part.Transparency = 0
+end
+end
+end
+
+local xRayEnabled = false
+XRayVision.Activated:Connect(function()
+if xRayEnabled then
+disableXRay()
+else
+enableXRay()
+end
+xRayEnabled = not xRayEnabled
+end)
+
 HomeTab:AddSection({ Name = "X-Ray Tool" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/x-ray"))(); Notification("X-ray"); print("botão pressionado") end })
+HomeTab:AddButton({ Name = "Executar", Callback = function() X-Ray(); Notification("X-ray"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Drop Tools(Dropa todos os itens do seu inventário)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()
