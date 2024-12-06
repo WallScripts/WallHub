@@ -317,7 +317,7 @@ local function NoclipLoop()
 end
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Player:AddLabel("Noclip não funciona mais :(")
+PlayerTab:AddLabel("Noclip não funciona mais :(")
 
 --[[ Noclip quebrou 
 PlayerTab:AddToggle({ Name = "Noclip", Default = false, Callback = function(value)
