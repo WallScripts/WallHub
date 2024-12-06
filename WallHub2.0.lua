@@ -303,7 +303,9 @@ player.CharacterAdded:Connect(onCharacterAdded)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PlayerTab:AddToggle({ Name = "inf jump", Default = false, Callback = toggleInfiniteJump })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-local Clip = true  
+PlayerTab:AddLabel("Noclip quebrou")
+
+--[[local Clip = true  
 local Noclipping  
 local function NoclipLoop()
      if not Clip and game.Players.LocalPlayer.Character then
@@ -317,9 +319,6 @@ local function NoclipLoop()
 end
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-PlayerTab:AddLabel("Noclip não funciona mais :(")
-
---[[ Noclip quebrou 
 PlayerTab:AddToggle({ Name = "Noclip", Default = false, Callback = function(value)
       Clip = not value  
       if Clip then            
