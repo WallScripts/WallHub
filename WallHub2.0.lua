@@ -57,21 +57,20 @@ HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:Http
 HomeTab:AddSection({ Name = "Esp" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Esp"))(); Notification("Esp"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-HomeTab:AddSection({ Name = "Teleport Tool" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Tptool"))(); Notification("Tp Tool"); print("botão pressionado") end })
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-HomeTab:AddSection({ Name = "F3x(Btools)(Client)" })
+HomeTab:AddSection({ Name = "F3x(Btools)(Client) - Tool" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)(); Notification("F3x(btools)"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-HomeTab:AddSection({ Name = "Invis Tool" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Invis"))(); Notification("Invisible Tool"); print("botão pressionado") end })
+HomeTab:AddSection({ Name = "Teleport - Tool" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Tptool"))(); Notification("Tp - Tool"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-HomeTab:AddSection({ Name = "Noclip Tool" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Noclip"))(); Notification("Noclip"); print("botão pressionado") end })
+HomeTab:AddSection({ Name = "Invisible - Tool" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Invis"))(); Notification("Invisible - Tool"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-HomeTab:AddSection({ Name = "X-Ray Tool" })
-HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/x-ray"))(); Notification("X-ray"); print("botão pressionado") end })
+HomeTab:AddSection({ Name = "Noclip - Tool" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Noclip"))(); Notification("Noclip - Tool "); print("botão pressionado") end })
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HomeTab:AddSection({ Name = "X-Ray -  Tool" })
+HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/x-ray"))(); Notification("X-ray - Tool"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "Drop Tools(Dropa todos os itens do seu inventário)" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()
