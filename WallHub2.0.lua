@@ -368,7 +368,33 @@ OrionLib:MakeNotification({
 })
 
 wait()
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 WNotification()
+
+local function NotificationCmds(message)
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+        Text = "[WallHubSystem]: " .. message,
+        Color = Color3.fromRGB(0, 139, 139),
+        Font = Enum.Font.SourceSansBold
+    })
+end
+----------------------------------------------------------
+
+-- Mensagens
+task.wait(5)
+NotificationCmds("Wall Hub executado com sucesso.")
+
+task.wait(14)
+NotificationCmds("Wall Hub ainda está em beta, Então pode ter vários erros.")
+
+task.wait(16)
+NotificationCmds("Você sabia que você é uma das primeiras pessoas ao usar Wall Hub?")
+
+
+print("Se você viu isso é porque o coiso tá funcionando")
+
 --Acabou
 
 OrionLib:Init()
