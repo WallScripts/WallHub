@@ -46,7 +46,7 @@ local infoTab = Window:MakeTab({ Name = "Info+", Icon = "rbxassetid://7733911828
 --HomeTab
 
 HomeTab:AddSection({ Name = "???" })
-HomeTab:AddButton({ Name = "???", Callback = function() end })
+HomeTab:AddButton({ Name = "???", Callback = function()loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))() end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HomeTab:AddSection({ Name = "FlyGui v3" })
 HomeTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/FlyGUI"))(); Notification("Fly GUI"); print("botão pressionado") end })
