@@ -715,7 +715,13 @@ local playerName = player.Name
 TDTab:AddSection({ Name = "Wall Walk" })
 TDTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))(); Notification("Wall Walk"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+--GraficosTab
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+GraficosTab:AddParagraph("Shaders","Aumenta a qualidadedo jogo significativamente")
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+GraficosTab:AddSection({ Name = "Pshade Reborn" })
+GraficosTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))(); Notification("Pshade Reborn"); print("botão pressionado") end })
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 --Notificao welcome 
 
