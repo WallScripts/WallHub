@@ -320,8 +320,10 @@ TDTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGe
 ShadersTab:AddParagraph("Shaders","Scripts que deixa o seu jogo com a qualidade mais boa")
 ----------------------------------------------------------
 ShadersTab:AddSection({ Name = "Pshade Reborn" })
-ShasersTab:AddButton({ Name = "Slk num achei o atualizado", Callback = function() print("botão pressionado") end })
+ShadersTab:AddButton({ Name = "Slk num achei o atualizado", Callback = function() print("botão pressionado") end })
 ----------------------------------------------------------
+
+
 --Notificao welcome 
 
 OrionLib:MakeNotification({
