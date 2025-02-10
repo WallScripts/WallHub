@@ -1,7 +1,6 @@
  --No WallHub2.0 eu vou refazer todas as coisas só que otimizado, e bem estruturado.
 
 
-
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/WallScripts/OrionLibraryV3/refs/heads/main/WallHub")))()
 print(OrionLib)
 local Window = OrionLib:MakeWindow({IntroText = "Wall Hub2.0", IntroIcon = "rbxassetid://8834748103",Name = ("Wall Hub (beta)| By Wallace ".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, InEnabled = true, ConfigFolder = "Wall Hub"})
@@ -178,7 +177,6 @@ HomeTab:AddButton({ Name = "Destroy Wall Hub", Callback = function()OrionLib:Des
 HomeTab:AddButton({ Name = "Reset Wall Hub", Callback = function()OrionLib:Destroy(); loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/WallHub2.0.lua"))(); print("Wall Hub reseted") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --PlayerTab
-
 local ClockLabel = PlayerTab:AddLabel("Time: Loading...")
 ----------------------------------------------------------
 local function FormatTime()
@@ -281,11 +279,6 @@ PlayerTab:AddButton({ Name = "Resetar Gravidade(slider)", Callback = function()g
 ----------------------------------------------------------
 PlayerTab:AddSection({ Name = "  " })
 ----------------------------------------------------------
-local function spawndropdown()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Goto"))()
-end
-spawndropdown()
-----------------------------------------------------------
 local infiniteJumpEnabled = false
 local player = game.Players.LocalPlayer
 local userInputService = game:GetService("UserInputService")
@@ -335,32 +328,6 @@ OrionLib:MakeNotification({
     Image = "rbxassetid://7733911828",
     Time = 7
 })
-
-wait()
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-local function NotificationCmds(message)
-    game.StarterGui:SetCore("ChatMakeSystemMessage", {
-        Text = "[WallHubSystem]: " .. message,
-        Color = Color3.fromRGB(0, 139, 139),
-        Font = Enum.Font.SourceSansBold
-    })
-end
-----------------------------------------------------------
-
--- Mensagens
-task.wait(5)
-NotificationCmds("Wall Hub executado com sucesso.")
-
-task.wait(14)
-NotificationCmds("Wall Hub ainda está em beta, Então pode ter vários erros.")
-
-task.wait(16)
-NotificationCmds("Você sabia que você é uma das primeiras pessoas ao usar Wall Hub?")
-
- --No WallHub2.0 eu vou refazer todas as coisas só que otimizado, e bem estruturado.
-
-
 
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/WallScripts/OrionLibraryV3/refs/heads/main/WallHub")))()
 print(OrionLib)
@@ -689,24 +656,6 @@ TDTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGe
 GraficosTab:AddParagraph("Shaders","Aumenta a qualidade do jogo significativamente")
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 GraficosTab:AddSection({ Name = "Pshade Reborn" })
-GraficosTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))(); Notification("Pshade Reborn"); print("botão pressionado") end })
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
---Notificao welcome 
-
-OrionLib:MakeNotification({
-    Name = "Wall Hub System",
-    Content = "Bem-vindo(a) " .. playerName,
-    Image = "rbxassetid://7733911828",
-    Time = 7
-})
-
-
-print("Se você viu isso é porque o coiso tá funcionando")
-
---Acabou
-
-OrionLib:Init()
 
 print("Se você viu isso é porque o coiso tá funcionando")
 
