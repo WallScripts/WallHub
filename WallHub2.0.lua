@@ -4,7 +4,7 @@
 
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/WallScripts/OrionLibraryV3/refs/heads/main/WallHub")))()
 print(OrionLib)
-local Window = OrionLib:MakeWindow({IntroText = "Wall Hub2.0", IntroIcon = "rbxassetid://8834748103",Name = ("Wall Hub 1.3 | By Wall Scripts".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, InEnabled = true, ConfigFolder = "Wall Hub"})
+local Window = OrionLib:MakeWindow({IntroText = "Wall Hub2.0", IntroIcon = "rbxassetid://8834748103",Name = ("Wall Hub(beta) | Wallace ".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, InEnabled = true, ConfigFolder = "Wall Hub"})
 
 --notificação 
 
@@ -320,7 +320,7 @@ TDTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGe
 ShadersTab:AddParagraph("Shaders","Scripts que deixa o seu jogo com a qualidade mais boa")
 ----------------------------------------------------------
 ShadersTab:AddSection({ Name = "Pshade Reborn" })
-ShasersTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))(); Notification("Pshade Reborn") print("botão pressionado") end })
+ShasersTab:AddButton({ Name = "Slk num achei o atualizado", Callback = function() print("botão pressionado") end })
 ----------------------------------------------------------
 --Notificao welcome 
 
