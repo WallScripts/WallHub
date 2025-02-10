@@ -706,42 +706,10 @@ player.CharacterAdded:Connect(onCharacterAdded)
 PlayerTab:AddToggle({ Name = "inf jump", Default = false, Callback = toggleInfiniteJump })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PlayerTab:AddLabel("Noclip quebrou")
-
---[[local Clip = true  
-local Noclipping  
-local function NoclipLoop()
-     if not Clip and game.Players.LocalPlayer.Character then
-     for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-     if child:IsA("BasePart") and child.CanCollide == true then NotificatiOn("Noclip")
-     child.CanCollide = false
-     NotificationOff("Noclip")
-     end
-     end
-     end
-end
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-PlayerTab:AddToggle({ Name = "Noclip", Default = false, Callback = function(value)
-      Clip = not value  
-      if Clip then            
-      if Noclipping then
-      Noclipping:Disconnect()
-end
-     for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-     if child:IsA("BasePart") then
-     child.CanCollide = true
- end
-end
- NotificationOff("Noclip")
-else            
-     Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
- NotificationOn("Noclip") end end }) ]]
-
 ----------------------------------------------------------
 local player = game.Players.LocalPlayer
 local playerName = player.Name
 ----------------------------------------------------------
-
 --TDTab
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TDTab:AddSection({ Name = "Wall Walk" })
