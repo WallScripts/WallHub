@@ -617,7 +617,6 @@ local function UpdateClock()
     end
 end
 spawn(UpdateClock)
-
 ----------------------------------------------------------
 local plr = game.Players.LocalPlayer
 function resetPlr() if plr.Character then plr.Character:BreakJoints()
@@ -706,49 +705,14 @@ player.CharacterAdded:Connect(onCharacterAdded)
 PlayerTab:AddToggle({ Name = "inf jump", Default = false, Callback = toggleInfiniteJump })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PlayerTab:AddLabel("Noclip quebrou")
-
---[[local Clip = true  
-local Noclipping  
-local function NoclipLoop()
-     if not Clip and game.Players.LocalPlayer.Character then
-     for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-     if child:IsA("BasePart") and child.CanCollide == true then NotificatiOn("Noclip")
-     child.CanCollide = false
-     NotificationOff("Noclip")
-     end
-     end
-     end
-end
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-PlayerTab:AddToggle({ Name = "Noclip", Default = false, Callback = function(value)
-      Clip = not value  
-      if Clip then            
-      if Noclipping then
-      Noclipping:Disconnect()
-end
-     for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-     if child:IsA("BasePart") then
-     child.CanCollide = true
- end
-end
- NotificationOff("Noclip")
-else            
-     Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
- NotificationOn("Noclip") end end }) ]]
-
 ----------------------------------------------------------
 local player = game.Players.LocalPlayer
 local playerName = player.Name
 ----------------------------------------------------------
-
 --TDTab
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TDTab:AddSection({ Name = "Wall Walk" })
 TDTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Wall-Walk"))(); Notification("Wall Walk"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
 --Notificao welcome 
 
 OrionLib:MakeNotification({
@@ -757,31 +721,9 @@ OrionLib:MakeNotification({
     Image = "rbxassetid://7733911828",
     Time = 7
 })
-
-wait()
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-local function NotificationCmds(message)
-    game.StarterGui:SetCore("ChatMakeSystemMessage", {
-        Text = "[WallHubSystem]: " .. message,
-        Color = Color3.fromRGB(0, 139, 139),
-        Font = Enum.Font.SourceSansBold
-    })
-end
-----------------------------------------------------------
 
--- Mensagens
-task.wait(5)
-NotificationCmds("Wall Hub executado com sucesso.")
-
-task.wait(14)
-NotificationCmds("Wall Hub ainda está em beta, Então pode ter vários erros.")
-
-task.wait(16)
-NotificationCmds("Você sabia que você é uma das primeiras pessoas ao usar Wall Hub?")
-
-
-print("Se você viu isso é porque o coiso tá funcionando")
+print("Wall Hub Carregado")
 
 --Acabou
 
