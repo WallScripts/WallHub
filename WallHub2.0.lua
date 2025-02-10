@@ -37,7 +37,7 @@ end
 local HomeTab = Window:MakeTab({ Name = "Home", Icon = "rbxassetid://7733960981", })
 local PlayerTab = Window:MakeTab({ Name = "Player", Icon = "rbxassetid://7733771472", })
 local TDTab = Window:MakeTab({ Name = "Trollar/Diversão", Icon = "rbxassetid://7734059095", })
-local GraficosTab = Window:MakeTab({ Name = "Gráficos", Icon = "rbxassetid://7743874674", })
+local ShadersTab = Window:MakeTab({ Name = "Shaders", Icon = "rbxassetid://7743874674", })
 local PoraoTab = Window:MakeTab({ Name = "Porão", Icon = "rbxassetid://7743869054", })
 local ServerTab = Window:MakeTab({ Name = "Server", Icon = "rbxassetid://7733954760", })
 local AtuTab = Window:MakeTab({ Name = "Atualizações", Icon = "rbxassetid://7743878358", })
@@ -178,7 +178,6 @@ HomeTab:AddButton({ Name = "Destroy Wall Hub", Callback = function()OrionLib:Des
 HomeTab:AddButton({ Name = "Reset Wall Hub", Callback = function()OrionLib:Destroy(); loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/WallHub2.0.lua"))(); print("Wall Hub reseted") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --PlayerTab
-
 local ClockLabel = PlayerTab:AddLabel("Time: Loading...")
 ----------------------------------------------------------
 local function FormatTime()
@@ -317,6 +316,12 @@ local playerName = player.Name
 TDTab:AddSection({ Name = "Wall Walk" })
 TDTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Wall-Walk"))(); Notification("Wall Walk"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--ShadersTab
+ShadersTab:AddParagraph("Shaders","Scripts que deixa o seu jogo com a qualidade mais boa")
+----------------------------------------------------------
+ShadersTab:AddSection({ Name = "Pshade Reborn" })
+ShasersTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))(); Notification("Pshade Reborn") print("botão pressionado") end })
+----------------------------------------------------------
 --Notificao welcome 
 
 OrionLib:MakeNotification({
