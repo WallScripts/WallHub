@@ -319,8 +319,8 @@ TDTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGe
 --ShadersTab
 ShadersTab:AddParagraph("Shaders","Scripts que deixa o seu jogo com a qualidade mais boa")
 ----------------------------------------------------------
-ShadersTab:AddSection({ Name = "Pshade Reborn" })
-ShadersTab:AddButton({ Name = "Slk num achei o atualizado", Callback = function() print("botão pressionado") end })
+ShadersTab:AddSection({ Name = "Pshade Ultimate" })
+ShadersTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/randomstring0/pshade-ultimate/refs/heads/main/src/cd.lua'))(); Notification("Pshade Ultimate"); (print("botão pressionado") end })
 ----------------------------------------------------------
 
 
