@@ -1,6 +1,7 @@
  --No WallHub2.0 eu vou refazer todas as coisas só que otimizado, e bem estruturado.
 
 
+
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/WallScripts/OrionLibraryV3/refs/heads/main/WallHub")))()
 print(OrionLib)
 local Window = OrionLib:MakeWindow({IntroText = "Wall Hub2.0", IntroIcon = "rbxassetid://8834748103",Name = ("Wall Hub (beta)| By Wallace ".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, InEnabled = true, ConfigFolder = "Wall Hub"})
@@ -177,6 +178,7 @@ HomeTab:AddButton({ Name = "Destroy Wall Hub", Callback = function()OrionLib:Des
 HomeTab:AddButton({ Name = "Reset Wall Hub", Callback = function()OrionLib:Destroy(); loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/WallHub/refs/heads/main/WallHub2.0.lua"))(); print("Wall Hub reseted") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --PlayerTab
+
 local ClockLabel = PlayerTab:AddLabel("Time: Loading...")
 ----------------------------------------------------------
 local function FormatTime()
@@ -279,6 +281,11 @@ PlayerTab:AddButton({ Name = "Resetar Gravidade(slider)", Callback = function()g
 ----------------------------------------------------------
 PlayerTab:AddSection({ Name = "  " })
 ----------------------------------------------------------
+local function spawndropdown()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Goto"))()
+end
+spawndropdown()
+----------------------------------------------------------
 local infiniteJumpEnabled = false
 local player = game.Players.LocalPlayer
 local userInputService = game:GetService("UserInputService")
@@ -308,6 +315,37 @@ player.CharacterAdded:Connect(onCharacterAdded)
 PlayerTab:AddToggle({ Name = "inf jump", Default = false, Callback = toggleInfiniteJump })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PlayerTab:AddLabel("Noclip quebrou")
+
+--[[local Clip = true  
+local Noclipping  
+local function NoclipLoop()
+     if not Clip and game.Players.LocalPlayer.Character then
+     for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+     if child:IsA("BasePart") and child.CanCollide == true then NotificatiOn("Noclip")
+     child.CanCollide = false
+     NotificationOff("Noclip")
+     end
+     end
+     end
+end
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PlayerTab:AddToggle({ Name = "Noclip", Default = false, Callback = function(value)
+      Clip = not value  
+      if Clip then            
+      if Noclipping then
+      Noclipping:Disconnect()
+end
+     for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+     if child:IsA("BasePart") then
+     child.CanCollide = true
+ end
+end
+ NotificationOff("Noclip")
+else            
+     Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
+ NotificationOn("Noclip") end end }) ]]
+
 ----------------------------------------------------------
 local player = game.Players.LocalPlayer
 local playerName = player.Name
@@ -328,6 +366,32 @@ OrionLib:MakeNotification({
     Image = "rbxassetid://7733911828",
     Time = 7
 })
+
+wait()
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local function NotificationCmds(message)
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+        Text = "[WallHubSystem]: " .. message,
+        Color = Color3.fromRGB(0, 139, 139),
+        Font = Enum.Font.SourceSansBold
+    })
+end
+----------------------------------------------------------
+
+-- Mensagens
+task.wait(5)
+NotificationCmds("Wall Hub executado com sucesso.")
+
+task.wait(14)
+NotificationCmds("Wall Hub ainda está em beta, Então pode ter vários erros.")
+
+task.wait(16)
+NotificationCmds("Você sabia que você é uma das primeiras pessoas ao usar Wall Hub?")
+
+ --No WallHub2.0 eu vou refazer todas as coisas só que otimizado, e bem estruturado.
+
+
 
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/WallScripts/OrionLibraryV3/refs/heads/main/WallHub")))()
 print(OrionLib)
@@ -642,20 +706,86 @@ player.CharacterAdded:Connect(onCharacterAdded)
 PlayerTab:AddToggle({ Name = "inf jump", Default = false, Callback = toggleInfiniteJump })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PlayerTab:AddLabel("Noclip quebrou")
+
+--[[local Clip = true  
+local Noclipping  
+local function NoclipLoop()
+     if not Clip and game.Players.LocalPlayer.Character then
+     for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+     if child:IsA("BasePart") and child.CanCollide == true then NotificatiOn("Noclip")
+     child.CanCollide = false
+     NotificationOff("Noclip")
+     end
+     end
+     end
+end
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PlayerTab:AddToggle({ Name = "Noclip", Default = false, Callback = function(value)
+      Clip = not value  
+      if Clip then            
+      if Noclipping then
+      Noclipping:Disconnect()
+end
+     for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+     if child:IsA("BasePart") then
+     child.CanCollide = true
+ end
+end
+ NotificationOff("Noclip")
+else            
+     Noclipping = game:GetService("RunService").Stepped:Connect(NoclipLoop)
+ NotificationOn("Noclip") end end }) ]]
+
 ----------------------------------------------------------
 local player = game.Players.LocalPlayer
 local playerName = player.Name
 ----------------------------------------------------------
+
 --TDTab
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TDTab:AddSection({ Name = "Wall Walk" })
-TDTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))(); Notification("Wall Walk"); print("botão pressionado") end })
+TDTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Wall-Walk"))(); Notification("Wall Walk"); print("botão pressionado") end })
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---GraficosTab
+
+
+--Notificao welcome 
+
+OrionLib:MakeNotification({
+    Name = "Wall Hub System",
+    Content = "Bem-vindo(a) " .. playerName,
+    Image = "rbxassetid://7733911828",
+    Time = 7
+})
+
+wait()
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-GraficosTab:AddParagraph("Shaders","Aumenta a qualidade do jogo significativamente")
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-GraficosTab:AddSection({ Name = "Pshade Reborn" })
+local function NotificationCmds(message)
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+        Text = "[WallHubSystem]: " .. message,
+        Color = Color3.fromRGB(0, 139, 139),
+        Font = Enum.Font.SourceSansBold
+    })
+end
+----------------------------------------------------------
+
+-- Mensagens
+task.wait(5)
+NotificationCmds("Wall Hub executado com sucesso.")
+
+task.wait(14)
+NotificationCmds("Wall Hub ainda está em beta, Então pode ter vários erros.")
+
+task.wait(16)
+NotificationCmds("Você sabia que você é uma das primeiras pessoas ao usar Wall Hub?")
+
+
+print("Se você viu isso é porque o coiso tá funcionando")
+
+--Acabou
+
+OrionLib:Init()
 
 print("Se você viu isso é porque o coiso tá funcionando")
 
