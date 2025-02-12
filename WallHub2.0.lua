@@ -313,6 +313,13 @@ PlayerTab:AddLabel("Noclip quebrou")
 local player = game.Players.LocalPlayer
 local playerName = player.Name
 ----------------------------------------------------------
+--Muscle Legends
+MLTab:AddSection({ Name = "Speed Hub" })
+MLTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))(); Notification("Speed Hub"); print("botão pressionado") end })
+----------------------------------------------------------
+MLTab:AddSection({ Name = "Beamed V2" })
+MLTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/ben1x1x1x1x/V2/refs/heads/main/BeamedV2FreeLoader"))(); Notification("Beamed V2"); print("botão pressionado") end })
+----------------------------------------------------------
 --TDTab
 TDTab:AddSection({ Name = "Wall Walk" })
 TDTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/WallScripts/Coisas/refs/heads/main/Wall-Walk"))(); Notification("Wall Walk"); print("botão pressionado") end })
