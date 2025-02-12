@@ -36,7 +36,7 @@ end
 
 local HomeTab = Window:MakeTab({ Name = "Home", Icon = "rbxassetid://7733960981", })
 local PlayerTab = Window:MakeTab({ Name = "Player", Icon = "rbxassetid://7733771472", })
-local MLTab = Window:MakeTab({ Name "Muscle Legends", Icon = "rbxassetid://7733799795", })
+local MLTab = Window:MakeTab({ Name = "Muscle Legends", Icon = "rbxassetid://7733799795", })
 local TDTab = Window:MakeTab({ Name = "Trollar/Diversão", Icon = "rbxassetid://7734059095", })
 local ShadersTab = Window:MakeTab({ Name = "Shaders", Icon = "rbxassetid://7743874674", })
 local PoraoTab = Window:MakeTab({ Name = "Porão", Icon = "rbxassetid://7743869054", })
