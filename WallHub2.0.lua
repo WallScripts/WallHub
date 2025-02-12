@@ -319,6 +319,7 @@ MLTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGe
 ----------------------------------------------------------
 MLTab:AddSection({ Name = "Beamed V2" })
 MLTab:AddButton({ Name = "Executar", Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/ben1x1x1x1x/V2/refs/heads/main/BeamedV2FreeLoader"))(); Notification("Beamed V2"); print("botão pressionado") end })
+MLTab:AddLabel("Key: Benishot")
 ----------------------------------------------------------
 --TDTab
 TDTab:AddSection({ Name = "Wall Walk" })
