@@ -13,7 +13,7 @@ inviteModule.Prompt({
 	invite = "https://discord.gg/UptAqXrHJ3",
 })
 
-Wait(5)
+wait(5)
 Music:Play()
 
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/WallScripts/OrionLibraryV3/refs/heads/main/WallHub")))()
